@@ -1,0 +1,75 @@
+.Input {
+  position: relative;
+  width: 100%;
+  height: 30px;
+  input {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding-left: 5px;
+    color: #61dafb;
+    background: none;
+    border: none;
+    outline: none;
+    caret-color: #61dafb;
+  }
+  input::placeholder {
+    color: rgba(97, 218, 251, 0.5);
+  }
+
+  span {
+    position: absolute;
+    display: block;
+    background-color: #61dafb;
+    transition: transform 0.1s ease-in-out;
+    content: '';
+  }
+
+  .top,
+  .bottom {
+    right: 0px;
+    left: 0px;
+    height: 1px;
+  }
+
+  .left,
+  .right {
+    top: 0px;
+    bottom: 0px;
+    width: 1px;
+    transform: scaleY(0);
+  }
+
+  .top {
+    top: 0px;
+    transform: scaleX(0);
+    transform-origin: left center;
+    transition-delay: 0.2s;
+  }
+  .left {
+    left: 0px;
+    transform-origin: bottom center;
+    transition-delay: 0.3s;
+  }
+  .bottom {
+    bottom: 0px;
+  }
+  .right {
+    right: 0px;
+    transform-origin: top center;
+    transition-delay: 0.1s;
+  }
+
+  input:focus ~ .right {
+    transform: scaleY(1);
+    transform-origin: bottom center;
+  }
+  input:focus ~ .left {
+    transform: scaleY(1);
+    transform-origin: top center;
+  }
+  input:focus ~ .top {
+    transform: scaleX(1);
+    transform-origin: right center;
+  }
+}

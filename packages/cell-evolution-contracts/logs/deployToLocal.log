@@ -1,0 +1,158 @@
+yarn run v1.22.10
+$ /home/shen/github/cellerfork-contract/node_modules/.bin/hardhat cellEvolution::deploy --wait-num 1 --network localhost
+
+info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
+yarn run v1.22.10
+$ /home/shen/github/cellerfork-contract/node_modules/.bin/hardhat cellEvolution:deploy --wait-num 1 --network localhost
+load
+{"level":30,"time":1627976178027,"pid":723049,"hostname":"ubuntu","msg":"deploy CellEvolutionNewWorld"}
+{"level":30,"time":1627976178204,"pid":723049,"hostname":"ubuntu","msg":"execute operation transaction:0, deploy CellEvolution, try 1"}
+{"level":30,"time":1627976178410,"pid":723049,"hostname":"ubuntu","msg":"success transaction:0,deploy CellEvolution"}
+{"level":30,"time":1627976178410,"pid":723049,"hostname":"ubuntu","msg":"write:./logs/cellEvolution:deploy.lock"}
+{"level":30,"time":1627976178412,"pid":723049,"hostname":"ubuntu","msg":"RiverBoxRandom deployed at 0x5FbDB2315678afecb367f032d93F642f64180aa3"}
+Done in 3.89s.
+yarn run v1.22.10
+$ /home/shen/github/cellerfork-contract/node_modules/.bin/hardhat cellEvolution:deploy --wait-num 1 --network localhost
+load
+{"level":30,"time":1628219513658,"pid":840531,"hostname":"ubuntu","msg":"read:./logs/cellEvolution:deploy.lock"}
+{"level":30,"time":1628219513676,"pid":840531,"hostname":"ubuntu","msg":"deploy CellEvolutionNewWorld"}
+
+info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
+yarn run v1.22.10
+$ /home/shen/github/cellerfork-contract/node_modules/.bin/hardhat cellEvolution:deploy --wait-num 1 --network localhost
+load
+{"level":30,"time":1628219545391,"pid":840629,"hostname":"ubuntu","msg":"read:./logs/cellEvolution:deploy.lock"}
+{"level":30,"time":1628219545397,"pid":840629,"hostname":"ubuntu","msg":"deploy CellEvolutionNewWorld"}
+{"level":30,"time":1628219545564,"pid":840629,"hostname":"ubuntu","msg":"skip transaction:0,deploy CellEvolution"}
+{"level":30,"time":1628219545564,"pid":840629,"hostname":"ubuntu","msg":"RiverBoxRandom deployed at 0x5FbDB2315678afecb367f032d93F642f64180aa3"}
+Done in 3.82s.
+yarn run v1.22.10
+info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
+yarn run v1.22.10
+info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
+yarn run v1.22.10
+$ /home/shen/github/cellerfork-contract/node_modules/.bin/env-cmd -f ./envs/.env.eth.rinkeby yarn run hardhat cellEvolution:deploy --wait-num 1 --network rinkeby
+$ /home/shen/github/cellerfork-contract/node_modules/.bin/hardhat cellEvolution:deploy --wait-num 1 --network rinkeby
+load
+{"level":30,"time":1628219995277,"pid":841842,"hostname":"ubuntu","msg":"read:./logs/cellEvolution:deploy.lock"}
+{"level":30,"time":1628219995283,"pid":841842,"hostname":"ubuntu","msg":"deploy CellEvolutionNewWorld"}
+{"level":30,"time":1628219996602,"pid":841842,"hostname":"ubuntu","msg":"skip transaction:0,deploy CellEvolution"}
+{"level":30,"time":1628219996602,"pid":841842,"hostname":"ubuntu","msg":"RiverBoxRandom deployed at 0x5FbDB2315678afecb367f032d93F642f64180aa3"}
+Done in 5.09s.
+yarn run v1.22.10
+$ /home/shen/github/cellerfork-contract/node_modules/.bin/env-cmd -f ./envs/.env.eth.rinkeby yarn run hardhat cellEvolution:deploy --wait-num 1 --network rinkeby
+$ /home/shen/github/cellerfork-contract/node_modules/.bin/hardhat cellEvolution:deploy --wait-num 1 --network rinkeby
+load
+{"level":30,"time":1628220067990,"pid":842017,"hostname":"ubuntu","msg":"deploy CellEvolutionNewWorld"}
+{"level":30,"time":1628220069242,"pid":842017,"hostname":"ubuntu","msg":"execute operation transaction:0, deploy CellEvolution, try 1"}
+{"level":30,"time":1628220095944,"pid":842017,"hostname":"ubuntu","msg":"success transaction:0,deploy CellEvolution"}
+{"level":30,"time":1628220095944,"pid":842017,"hostname":"ubuntu","msg":"write:./logs/cellEvolution:deploy.lock"}
+{"level":30,"time":1628220095946,"pid":842017,"hostname":"ubuntu","msg":"RiverBoxRandom deployed at 0xc17d6F10c8258F33213668601E6eee5e813DD3d9"}
+Done in 31.57s.
+yarn run v1.22.10
+$ /home/shen/github/cellerfork-contract/node_modules/.bin/env-cmd -f ./envs/.env.eth.rinkeby yarn run hardhat cellEvolution:deploy --wait-num 1 --network rinkeby
+$ /home/shen/github/cellerfork-contract/node_modules/.bin/hardhat cellEvolution:deploy --wait-num 1 --network rinkeby
+load
+{"level":30,"time":1628220303834,"pid":842554,"hostname":"ubuntu","msg":"deploy CellEvolutionNewWorld"}
+{"level":30,"time":1628220305094,"pid":842554,"hostname":"ubuntu","msg":"execute operation transaction:0, deploy CellEvolution, try 1"}
+{"level":30,"time":1628220319607,"pid":842554,"hostname":"ubuntu","msg":"success transaction:0,deploy CellEvolution"}
+┌─────────┬────────────────────────┬─────────┬──────────┬──────────────────────────────┐
+│ (index) │      functionName      │ gasUsed │ gasPrice │             fee              │
+├─────────┼────────────────────────┼─────────┼──────────┼──────────────────────────────┤
+│    0    │ 'deploy CellEvolution' │ 2522825 │ '1 gwei' │ '0.002522825022705425 ether' │
+│    1    │       'totalGas'       │ 2522825 │ '1 gwei' │ '0.002522825022705425 ether' │
+└─────────┴────────────────────────┴─────────┴──────────┴──────────────────────────────┘
+{"level":30,"time":1628220319609,"pid":842554,"hostname":"ubuntu","msg":"RiverBoxRandom deployed at 0xbe76D34b50cce068e514030a136905514C2D0c60"}
+Done in 19.56s.
+yarn run v1.22.10
+$ /home/shen/github/cellerfork-contract/node_modules/.bin/hardhat cellEvolution:deploy --wait-num 1 --network localhost
+load
+{"level":30,"time":1628560452560,"pid":959598,"hostname":"ubuntu","msg":"deploy CellEvolutionNewWorld"}
+
+info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
+yarn run v1.22.10
+$ /home/shen/github/cellerfork-contract/node_modules/.bin/env-cmd -f ./envs/.env.eth.rinkeby yarn run hardhat cellEvolution:deploy --wait-num 1 --network rinkeby
+$ /home/shen/github/cellerfork-contract/node_modules/.bin/hardhat cellEvolution:deploy --wait-num 1 --network rinkeby
+load
+{"level":30,"time":1628560470418,"pid":959710,"hostname":"ubuntu","msg":"deploy CellEvolutionNewWorld"}
+{"level":30,"time":1628560471668,"pid":959710,"hostname":"ubuntu","msg":"execute operation transaction:0, deploy CellEvolution, try 1"}
+{"level":30,"time":1628560492416,"pid":959710,"hostname":"ubuntu","msg":"success transaction:0,deploy CellEvolution"}
+┌─────────┬────────────────────────┬─────────┬──────────┬─────────────────────────────┐
+│ (index) │      functionName      │ gasUsed │ gasPrice │             fee             │
+├─────────┼────────────────────────┼─────────┼──────────┼─────────────────────────────┤
+│    0    │ 'deploy CellEvolution' │ 2649765 │ '1 gwei' │ '0.00264976502119812 ether' │
+│    1    │       'totalGas'       │ 2649765 │ '1 gwei' │ '0.00264976502119812 ether' │
+└─────────┴────────────────────────┴─────────┴──────────┴─────────────────────────────┘
+{"level":30,"time":1628560492419,"pid":959710,"hostname":"ubuntu","msg":"RiverBoxRandom deployed at 0x9d62191CbDf015d5f7744Feb56d2f5Fb692706c4"}
+Done in 25.47s.
+yarn run v1.22.10
+$ /home/shen/github/cellerfork-contract/node_modules/.bin/env-cmd -f ./envs/.env.eth.rinkeby yarn run hardhat cellEvolution:deploy --wait-num 1 --network rinkeby
+$ /home/shen/github/cellerfork-contract/node_modules/.bin/hardhat cellEvolution:deploy --wait-num 1 --network rinkeby
+load
+{"level":30,"time":1628645730944,"pid":1002522,"hostname":"ubuntu","msg":"deploy CellEvolutionNewWorld"}
+{"level":30,"time":1628645732178,"pid":1002522,"hostname":"ubuntu","msg":"execute operation transaction:0, deploy CellEvolution, try 1"}
+{"level":30,"time":1628645746594,"pid":1002522,"hostname":"ubuntu","msg":"success transaction:0,deploy CellEvolution"}
+┌─────────┬────────────────────────┬─────────┬──────────┬──────────────────────────────┐
+│ (index) │      functionName      │ gasUsed │ gasPrice │             fee              │
+├─────────┼────────────────────────┼─────────┼──────────┼──────────────────────────────┤
+│    0    │ 'deploy CellEvolution' │ 2614844 │ '1 gwei' │ '0.002614847174420616 ether' │
+│    1    │       'totalGas'       │ 2614844 │ '1 gwei' │ '0.002614847174420616 ether' │
+└─────────┴────────────────────────┴─────────┴──────────┴──────────────────────────────┘
+{"level":30,"time":1628645746598,"pid":1002522,"hostname":"ubuntu","msg":"RiverBoxRandom deployed at 0x47387B396b8c1651b44f8cA71682D3f0aAdD9139"}
+Done in 19.02s.
+yarn run v1.22.10
+$ /home/shen/github/cellerfork-contract/node_modules/.bin/env-cmd -f ./envs/.env.eth.rinkeby yarn run hardhat cellEvolution:deploy --wait-num 1 --network rinkeby
+$ /home/shen/github/cellerfork-contract/node_modules/.bin/hardhat cellEvolution:deploy --wait-num 1 --network rinkeby
+load
+{"level":30,"time":1628735664700,"pid":1064363,"hostname":"ubuntu","msg":"deploy CellEvolutionNewWorld"}
+{"level":30,"time":1628735666043,"pid":1064363,"hostname":"ubuntu","msg":"execute operation transaction:0, deploy CellEvolution, try 1"}
+{"level":30,"time":1628735692788,"pid":1064363,"hostname":"ubuntu","msg":"success transaction:0,deploy CellEvolution"}
+┌─────────┬────────────────────────┬─────────┬──────────┬──────────────────────────────┐
+│ (index) │      functionName      │ gasUsed │ gasPrice │             fee              │
+├─────────┼────────────────────────┼─────────┼──────────┼──────────────────────────────┤
+│    0    │ 'deploy CellEvolution' │ 3520119 │ '1 gwei' │ '0.004224141972772035 ether' │
+│    1    │       'totalGas'       │ 3520119 │ '1 gwei' │ '0.004224141972772035 ether' │
+└─────────┴────────────────────────┴─────────┴──────────┴──────────────────────────────┘
+{"level":30,"time":1628735692792,"pid":1064363,"hostname":"ubuntu","msg":"RiverBoxRandom deployed at 0x7936C6A16B28900E31699A79D814767b7A99d25a"}
+Done in 32.16s.
+yarn run v1.22.10
+$ /home/shen/github/cellerfork-contract/node_modules/.bin/env-cmd -f ./envs/.env.eth.rinkeby yarn run hardhat cellEvolution:deploy --wait-num 1 --network rinkeby
+$ /home/shen/github/cellerfork-contract/node_modules/.bin/hardhat cellEvolution:deploy --wait-num 1 --network rinkeby
+load
+{"level":30,"time":1628750128476,"pid":1092427,"hostname":"ubuntu","msg":"deploy CellEvolutionNewWorld"}
+{"level":30,"time":1628750129720,"pid":1092427,"hostname":"ubuntu","msg":"execute operation transaction:0, deploy CellEvolution, try 1"}
+{"level":30,"time":1628750148189,"pid":1092427,"hostname":"ubuntu","msg":"success transaction:0,deploy CellEvolution"}
+┌─────────┬────────────────────────┬─────────┬──────────┬──────────────────────────────┐
+│ (index) │      functionName      │ gasUsed │ gasPrice │             fee              │
+├─────────┼────────────────────────┼─────────┼──────────┼──────────────────────────────┤
+│    0    │ 'deploy CellEvolution' │ 3664082 │ '1 gwei' │ '0.004396897524284402 ether' │
+│    1    │       'totalGas'       │ 3664082 │ '1 gwei' │ '0.004396897524284402 ether' │
+└─────────┴────────────────────────┴─────────┴──────────┴──────────────────────────────┘
+{"level":30,"time":1628750148191,"pid":1092427,"hostname":"ubuntu","msg":"RiverBoxRandom deployed at 0xb34135Ec760891f5F17bECB223144b3618A95d7f"}
+Done in 23.65s.
+$ /home/shen/github/33576e7210664d9087f58c0b27b0afae/node_modules/.bin/env-cmd -f ./envs/.env.eth.rinkeby yarn run hardhat cellEvolution:deploy --wait-num 1 --network rinkeby
+$ /home/shen/github/33576e7210664d9087f58c0b27b0afae/node_modules/.bin/hardhat cellEvolution:deploy --wait-num 1 --network rinkeby
+load
+{"level":30,"time":1629453431756,"pid":1373493,"hostname":"ubuntu","msg":"deploy CellEvolutionNewWorld"}
+{"level":30,"time":1629453432908,"pid":1373493,"hostname":"ubuntu","msg":"execute operation transaction:0, deploy CellEvolution, try 1"}
+{"level":30,"time":1629453453045,"pid":1373493,"hostname":"ubuntu","msg":"success transaction:0,deploy CellEvolution"}
+┌─────────┬────────────────────────┬─────────┬──────────┬─────────────────────────────┐
+│ (index) │      functionName      │ gasUsed │ gasPrice │             fee             │
+├─────────┼────────────────────────┼─────────┼──────────┼─────────────────────────────┤
+│    0    │ 'deploy CellEvolution' │ 3664082 │ '1 gwei' │ '0.00366408203664082 ether' │
+│    1    │       'totalGas'       │ 3664082 │ '1 gwei' │ '0.00366408203664082 ether' │
+└─────────┴────────────────────────┴─────────┴──────────┴─────────────────────────────┘
+{"level":30,"time":1629453453048,"pid":1373493,"hostname":"ubuntu","msg":"RiverBoxRandom deployed at 0x007901EcB8C29ba49b73897752312850f768c539"}
+$ /home/shen/github/33576e7210664d9087f58c0b27b0afae/node_modules/.bin/env-cmd -f ./envs/.env.eth.rinkeby yarn run hardhat cellEvolution:deploy --wait-num 1 --network rinkeby
+$ /home/shen/github/33576e7210664d9087f58c0b27b0afae/node_modules/.bin/hardhat cellEvolution:deploy --wait-num 1 --network rinkeby
+load
+{"level":30,"time":1629455395669,"pid":1380256,"hostname":"ubuntu","msg":"deploy CellEvolutionNewWorld"}
+{"level":30,"time":1629455397733,"pid":1380256,"hostname":"ubuntu","msg":"execute operation transaction:0, deploy CellEvolution, try 1"}
+{"level":30,"time":1629455434755,"pid":1380256,"hostname":"ubuntu","msg":"success transaction:0,deploy CellEvolution"}
+┌─────────┬────────────────────────┬─────────┬──────────┬──────────────────────────────┐
+│ (index) │      functionName      │ gasUsed │ gasPrice │             fee              │
+├─────────┼────────────────────────┼─────────┼──────────┼──────────────────────────────┤
+│    0    │ 'deploy CellEvolution' │ 3664082 │ '1 gwei' │ '0.003664082032976738 ether' │
+│    1    │       'totalGas'       │ 3664082 │ '1 gwei' │ '0.003664082032976738 ether' │
+└─────────┴────────────────────────┴─────────┴──────────┴──────────────────────────────┘
+{"level":30,"time":1629455434758,"pid":1380256,"hostname":"ubuntu","msg":"RiverBoxRandom deployed at 0x7270F68bf44CA66038A0ffE93d29F5A6004aCDdf"}

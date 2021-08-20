@@ -1,0 +1,15 @@
+{
+  "name": "root",
+  "private": true,
+  "workspaces": [
+    "packages/*",
+    "packages/cell-evolution-contracts/sdk"
+  ],
+  "scripts": {
+    "startWebapp": "yarn workspace cell-evolution-app run start",
+    "compileContract": "yarn workspace cell-evolution-contracts run compile",
+    "testContract": "yarn workspace cell-evolution-contracts run test",
+    "deployContract": "yarn workspace cell-evolution-contracts run deploy",
+    "buildSDK": "yarn workspace @white-matrix/cellevolution-sdk build"
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "name": "cell-evolution-app",
+  "description": "cell evolution frontend source code react",
+  "homepage": "",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@craco/craco": "^6.2.0",
+    "@metamask/detect-provider": "^1.2.0",
+    "@reduxjs/toolkit": "^1.6.1",
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.1.0",
+    "@testing-library/user-event": "^12.1.10",
+    "@types/jest": "^26.0.15",
+    "@types/node": "^12.0.0",
+    "@types/react": "^17.0.0",
+    "@types/react-dom": "^17.0.0",
+    "@types/react-modal": "^3.12.1",
+    "@white-matrix/cellevolution-sdk": "^0.0.2-a",
+    "@white-matrix/event-emitter": "^1.0.0",
+    "classnames": "^2.3.1",
+    "craco-less": "^1.18.0",
+    "gsap": "1.20.1",
+    "lodash": "^4.17.21",
+    "parallax-js": "^3.1.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-modal": "^3.14.3",
+    "react-redux": "^7.2.4",
+    "react-scripts": "4.0.3",
+    "reactour": "^1.18.6",
+    "styled-components": "^5.3.0",
+    "three": "0.89.0",
+    "typescript": "^4.1.2",
+    "web-vitals": "^1.0.1"
+  },
+  "scripts": {
+    "start": "craco start",
+    "build": "craco build",
+    "test": "craco test",
+    "lint-staged": "lint-staged",
+    "precommit": "lint-staged"
+  },
+  "lint-staged": {
+    "**/*.less": "stylelint --syntax less",
+    "**/*.{js,jsx,ts,tsx}": "npm run lint-staged:js",
+    "**/*.{js,jsx,tsx,ts,less,md,json}": [
+      "prettier --write"
+    ]
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@types/gsap": "1.20.1",
+    "@types/lodash": "^4.14.172",
+    "@types/reactour": "^1.18.2",
+    "@types/three": "0.89.0",
+    "@umijs/fabric": "^2.6.2",
+    "eslint": "^7.32.0",
+    "lint-staged": "^11.1.1",
+    "prettier": "^2.3.2",
+    "stylelint": "^13.13.1"
+  }
+}

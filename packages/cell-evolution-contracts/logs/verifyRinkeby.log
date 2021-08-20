@@ -1,0 +1,171 @@
+yarn run v1.22.10
+$ /home/shen/github/cellerfork-contract/node_modules/.bin/env-cmd -f ./envs/.env.eth.rinkeby yarn run hardhat cellEvolution:verify --network rinkeby
+$ /home/shen/github/cellerfork-contract/node_modules/.bin/hardhat cellEvolution:verify --network rinkeby
+{"level":30,"time":1628737830838,"pid":1068948,"hostname":"ubuntu","msg":"Use deployment information {\"operator\":\"0x65a227f7F8f929cBB25843F4d9d7AF9a07f8FACE\",\"CellEvolution\":{\"address\":\"0x7936C6A16B28900E31699A79D814767b7A99d25a\",\"impl\":\"CellEvolutionNewWorld\"}}"}
+HardhatError: HH303: Unrecognized task verify:verify
+    at Environment.run (/home/shen/github/cellerfork-contract/node_modules/hardhat/src/internal/core/runtime-environment.ts:118:13)
+    at /home/shen/github/cellerfork-contract/tasks/verify/verify-cellevolution.ts:23:17
+    at step (/home/shen/github/cellerfork-contract/tasks/verify/verify-cellevolution.ts:33:23)
+    at Object.next (/home/shen/github/cellerfork-contract/tasks/verify/verify-cellevolution.ts:14:53)
+    at fulfilled (/home/shen/github/cellerfork-contract/tasks/verify/verify-cellevolution.ts:5:58)
+Done in 3.94s.
+yarn run v1.22.10
+$ /home/shen/github/cellerfork-contract/node_modules/.bin/env-cmd -f ./envs/.env.eth.rinkeby yarn run hardhat cellEvolution:verify --network rinkeby
+$ /home/shen/github/cellerfork-contract/node_modules/.bin/hardhat cellEvolution:verify --network rinkeby
+{"level":30,"time":1628737889007,"pid":1069294,"hostname":"ubuntu","msg":"Use deployment information {\"operator\":\"0x65a227f7F8f929cBB25843F4d9d7AF9a07f8FACE\",\"CellEvolution\":{\"address\":\"0x7936C6A16B28900E31699A79D814767b7A99d25a\",\"impl\":\"CellEvolutionNewWorld\"}}"}
+NomicLabsHardhatPluginError: Please provide an Etherscan API token via hardhat config.
+E.g.: { [...], etherscan: { apiKey: 'an API key' }, [...] }
+See https://etherscan.io/apis
+    at SimpleTaskDefinition.verifySubtask [as action] (/home/shen/github/cellerfork-contract/node_modules/@nomiclabs/hardhat-etherscan/src/index.ts:160:11)
+    at Environment._runTaskDefinition (/home/shen/github/cellerfork-contract/node_modules/hardhat/src/internal/core/runtime-environment.ts:217:35)
+    at Environment.run (/home/shen/github/cellerfork-contract/node_modules/hardhat/src/internal/core/runtime-environment.ts:129:25)
+    at /home/shen/github/cellerfork-contract/tasks/verify/verify-cellevolution.ts:23:17
+    at step (/home/shen/github/cellerfork-contract/tasks/verify/verify-cellevolution.ts:33:23)
+    at Object.next (/home/shen/github/cellerfork-contract/tasks/verify/verify-cellevolution.ts:14:53)
+    at fulfilled (/home/shen/github/cellerfork-contract/tasks/verify/verify-cellevolution.ts:5:58)
+Done in 3.93s.
+yarn run v1.22.10
+$ /home/shen/github/cellerfork-contract/node_modules/.bin/env-cmd -f ./envs/.env.eth.rinkeby yarn run hardhat cellEvolution:verify --network rinkeby
+$ /home/shen/github/cellerfork-contract/node_modules/.bin/hardhat cellEvolution:verify --network rinkeby
+{"level":30,"time":1628737928971,"pid":1069442,"hostname":"ubuntu","msg":"Use deployment information {\"operator\":\"0x65a227f7F8f929cBB25843F4d9d7AF9a07f8FACE\",\"CellEvolution\":{\"address\":\"0x7936C6A16B28900E31699A79D814767b7A99d25a\",\"impl\":\"CellEvolutionNewWorld\"}}"}
+Nothing to compile
+No need to generate any newer typings.
+ ·-------------------------|-------------·
+ |  [1mContract Name[22m          ·  Size (Kb)  │
+ ··························|··············
+ |  CellEvolutionNewWorld  ·      15.28  │
+ ··························|··············
+ |  SafeMath               ·       0.08  │
+ ··························|··············
+ |  Strings                ·       0.08  │
+ ·-------------------------|-------------·
+NomicLabsHardhatPluginError: The constructor for contracts/CellEvolutionNewWorld.sol:CellEvolutionNewWorld has 0 parameters
+but 1 arguments were provided instead.
+    at Object.encodeArguments (/home/shen/github/cellerfork-contract/node_modules/@nomiclabs/hardhat-etherscan/src/ABIEncoder.ts:29:13)
+    at SimpleTaskDefinition.verifySubtask [as action] (/home/shen/github/cellerfork-contract/node_modules/@nomiclabs/hardhat-etherscan/src/index.ts:242:34)
+    at Environment._runTaskDefinition (/home/shen/github/cellerfork-contract/node_modules/hardhat/src/internal/core/runtime-environment.ts:217:14)
+    at Environment.run (/home/shen/github/cellerfork-contract/node_modules/hardhat/src/internal/core/runtime-environment.ts:129:14)
+
+    Caused by: Error: types/values length mismatch (count={"types":0,"values":1}, value={"types":[],"values":["0x7936C6A16B28900E31699A79D814767b7A99d25a"]}, code=INVALID_ARGUMENT, version=abi/5.4.0)
+        at Logger.makeError (/home/shen/github/cellerfork-contract/node_modules/@ethersproject/logger/src.ts/index.ts:213:28)
+        at Logger.throwError (/home/shen/github/cellerfork-contract/node_modules/@ethersproject/logger/src.ts/index.ts:225:20)
+        at AbiCoder.encode (/home/shen/github/cellerfork-contract/node_modules/@ethersproject/abi/src.ts/abi-coder.ts:102:20)
+        at Interface._encodeParams (/home/shen/github/cellerfork-contract/node_modules/@ethersproject/abi/src.ts/interface.ts:325:31)
+        at Interface.encodeDeploy (/home/shen/github/cellerfork-contract/node_modules/@ethersproject/abi/src.ts/interface.ts:329:21)
+        at Object.encodeArguments (/home/shen/github/cellerfork-contract/node_modules/@nomiclabs/hardhat-etherscan/src/ABIEncoder.ts:22:8)
+        at SimpleTaskDefinition.verifySubtask [as action] (/home/shen/github/cellerfork-contract/node_modules/@nomiclabs/hardhat-etherscan/src/index.ts:242:34)
+        at Environment._runTaskDefinition (/home/shen/github/cellerfork-contract/node_modules/hardhat/src/internal/core/runtime-environment.ts:217:14)
+        at Environment.run (/home/shen/github/cellerfork-contract/node_modules/hardhat/src/internal/core/runtime-environment.ts:129:14)
+Done in 7.07s.
+yarn run v1.22.10
+$ /home/shen/github/cellerfork-contract/node_modules/.bin/env-cmd -f ./envs/.env.eth.rinkeby yarn run hardhat cellEvolution:verify --network rinkeby
+$ /home/shen/github/cellerfork-contract/node_modules/.bin/hardhat cellEvolution:verify --network rinkeby
+{"level":30,"time":1628737971887,"pid":1069613,"hostname":"ubuntu","msg":"Use deployment information {\"operator\":\"0x65a227f7F8f929cBB25843F4d9d7AF9a07f8FACE\",\"CellEvolution\":{\"address\":\"0x7936C6A16B28900E31699A79D814767b7A99d25a\",\"impl\":\"CellEvolutionNewWorld\"}}"}
+Nothing to compile
+No need to generate any newer typings.
+ ·-------------------------|-------------·
+ |  [1mContract Name[22m          ·  Size (Kb)  │
+ ··························|··············
+ |  CellEvolutionNewWorld  ·      15.28  │
+ ··························|··············
+ |  SafeMath               ·       0.08  │
+ ··························|··············
+ |  Strings                ·       0.08  │
+ ·-------------------------|-------------·
+Compiling 1 file with 0.8.4
+NomicLabsHardhatPluginError: Failed to send contract verification request.
+Endpoint URL: https://api-rinkeby.etherscan.io/api
+Reason: request to https://api-rinkeby.etherscan.io/api failed, reason: connect ECONNREFUSED 74.86.142.55:443
+    at Object.verifyContract (/home/shen/github/cellerfork-contract/node_modules/@nomiclabs/hardhat-etherscan/src/etherscan/EtherscanService.ts:33:11)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+    at attemptVerification (/home/shen/github/cellerfork-contract/node_modules/@nomiclabs/hardhat-etherscan/src/index.ts:415:20)
+    at SimpleTaskDefinition.action (/home/shen/github/cellerfork-contract/node_modules/@nomiclabs/hardhat-etherscan/src/index.ts:710:48)
+    at Environment._runTaskDefinition (/home/shen/github/cellerfork-contract/node_modules/hardhat/src/internal/core/runtime-environment.ts:217:14)
+    at Environment.run (/home/shen/github/cellerfork-contract/node_modules/hardhat/src/internal/core/runtime-environment.ts:129:14)
+    at SimpleTaskDefinition.verifySubtask [as action] (/home/shen/github/cellerfork-contract/node_modules/@nomiclabs/hardhat-etherscan/src/index.ts:255:28)
+    at Environment._runTaskDefinition (/home/shen/github/cellerfork-contract/node_modules/hardhat/src/internal/core/runtime-environment.ts:217:14)
+    at Environment.run (/home/shen/github/cellerfork-contract/node_modules/hardhat/src/internal/core/runtime-environment.ts:129:14)
+
+    Caused by: FetchError: request to https://api-rinkeby.etherscan.io/api failed, reason: connect ECONNREFUSED 74.86.142.55:443
+        at ClientRequest.<anonymous> (/home/shen/github/cellerfork-contract/node_modules/node-fetch/lib/index.js:1461:11)
+        at ClientRequest.emit (events.js:375:28)
+        at ClientRequest.emit (domain.js:470:12)
+        at TLSSocket.socketErrorListener (_http_client.js:475:9)
+        at TLSSocket.emit (events.js:375:28)
+        at TLSSocket.emit (domain.js:470:12)
+        at emitErrorNT (internal/streams/destroy.js:106:8)
+        at emitErrorCloseNT (internal/streams/destroy.js:74:3)
+        at processTicksAndRejections (internal/process/task_queues.js:82:21)
+Done in 52.23s.
+yarn run v1.22.10
+$ /home/shen/github/cellerfork-contract/node_modules/.bin/env-cmd -f ./envs/.env.eth.rinkeby yarn run hardhat cellEvolution:verify --network rinkeby
+$ /home/shen/github/cellerfork-contract/node_modules/.bin/hardhat cellEvolution:verify --network rinkeby
+{"level":30,"time":1628738161864,"pid":1070003,"hostname":"ubuntu","msg":"Use deployment information {\"operator\":\"0x65a227f7F8f929cBB25843F4d9d7AF9a07f8FACE\",\"CellEvolution\":{\"address\":\"0x7936C6A16B28900E31699A79D814767b7A99d25a\",\"impl\":\"CellEvolutionNewWorld\"}}"}
+Nothing to compile
+No need to generate any newer typings.
+ ·-------------------------|-------------·
+ |  [1mContract Name[22m          ·  Size (Kb)  │
+ ··························|··············
+ |  CellEvolutionNewWorld  ·      15.28  │
+ ··························|··············
+ |  SafeMath               ·       0.08  │
+ ··························|··············
+ |  Strings                ·       0.08  │
+ ·-------------------------|-------------·
+Compiling 1 file with 0.8.4
+NomicLabsHardhatPluginError: Failed to send contract verification request.
+Endpoint URL: https://api-rinkeby.etherscan.io/api
+Reason: request to https://api-rinkeby.etherscan.io/api failed, reason: connect ECONNREFUSED 103.200.31.172:443
+    at Object.verifyContract (/home/shen/github/cellerfork-contract/node_modules/@nomiclabs/hardhat-etherscan/src/etherscan/EtherscanService.ts:33:11)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+    at attemptVerification (/home/shen/github/cellerfork-contract/node_modules/@nomiclabs/hardhat-etherscan/src/index.ts:415:20)
+    at SimpleTaskDefinition.action (/home/shen/github/cellerfork-contract/node_modules/@nomiclabs/hardhat-etherscan/src/index.ts:710:48)
+    at Environment._runTaskDefinition (/home/shen/github/cellerfork-contract/node_modules/hardhat/src/internal/core/runtime-environment.ts:217:14)
+    at Environment.run (/home/shen/github/cellerfork-contract/node_modules/hardhat/src/internal/core/runtime-environment.ts:129:14)
+    at SimpleTaskDefinition.verifySubtask [as action] (/home/shen/github/cellerfork-contract/node_modules/@nomiclabs/hardhat-etherscan/src/index.ts:255:28)
+    at Environment._runTaskDefinition (/home/shen/github/cellerfork-contract/node_modules/hardhat/src/internal/core/runtime-environment.ts:217:14)
+    at Environment.run (/home/shen/github/cellerfork-contract/node_modules/hardhat/src/internal/core/runtime-environment.ts:129:14)
+
+    Caused by: FetchError: request to https://api-rinkeby.etherscan.io/api failed, reason: connect ECONNREFUSED 103.200.31.172:443
+        at ClientRequest.<anonymous> (/home/shen/github/cellerfork-contract/node_modules/node-fetch/lib/index.js:1461:11)
+        at ClientRequest.emit (events.js:375:28)
+        at ClientRequest.emit (domain.js:470:12)
+        at TLSSocket.socketErrorListener (_http_client.js:475:9)
+        at TLSSocket.emit (events.js:375:28)
+        at TLSSocket.emit (domain.js:470:12)
+        at emitErrorNT (internal/streams/destroy.js:106:8)
+        at emitErrorCloseNT (internal/streams/destroy.js:74:3)
+        at processTicksAndRejections (internal/process/task_queues.js:82:21)
+Done in 50.32s.
+yarn run v1.22.10
+$ /home/shen/github/cellerfork-contract/node_modules/.bin/env-cmd -f ./envs/.env.eth.rinkeby yarn run hardhat cellEvolution:verify --network rinkeby
+$ /home/shen/github/cellerfork-contract/node_modules/.bin/hardhat cellEvolution:verify --network rinkeby
+{"level":30,"time":1628738650115,"pid":1070815,"hostname":"ubuntu","msg":"Use deployment information {\"operator\":\"0x65a227f7F8f929cBB25843F4d9d7AF9a07f8FACE\",\"CellEvolution\":{\"address\":\"0x7936C6A16B28900E31699A79D814767b7A99d25a\",\"impl\":\"CellEvolutionNewWorld\"}}"}
+Nothing to compile
+No need to generate any newer typings.
+ ·-------------------------|-------------·
+ |  [1mContract Name[22m          ·  Size (Kb)  │
+ ··························|··············
+ |  CellEvolutionNewWorld  ·      15.28  │
+ ··························|··············
+ |  SafeMath               ·       0.08  │
+ ··························|··············
+ |  Strings                ·       0.08  │
+ ·-------------------------|-------------·
+yarn run v1.22.10
+$ /home/shen/github/cellerfork-contract/node_modules/.bin/env-cmd -f ./envs/.env.eth.rinkeby yarn run hardhat cellEvolution:verify --network rinkeby
+$ /home/shen/github/cellerfork-contract/node_modules/.bin/hardhat cellEvolution:verify --network rinkeby
+{"level":30,"time":1628739138654,"pid":1071706,"hostname":"ubuntu","msg":"Use deployment information {\"operator\":\"0x65a227f7F8f929cBB25843F4d9d7AF9a07f8FACE\",\"CellEvolution\":{\"address\":\"0x7936C6A16B28900E31699A79D814767b7A99d25a\",\"impl\":\"CellEvolutionNewWorld\"}}"}
+Compiling 4 files with 0.8.4
+Generating typings for: 4 artifacts in dir: ./sdk/src/typechain for target: ethers-v5
+Successfully generated 7 typings!
+Compilation finished successfully
+ ·-------------------------|-------------·
+ |  [1mContract Name[22m          ·  Size (Kb)  │
+ ··························|··············
+ |  CellEvolutionNewWorld  ·      15.28  │
+ ··························|··············
+ |  SafeMath               ·       0.08  │
+ ··························|··············
+ |  Strings                ·       0.08  │
+ ·-------------------------|-------------·

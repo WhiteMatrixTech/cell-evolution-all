@@ -1,0 +1,40 @@
+{
+  "name": "@white-matrix/cellevolution-sdk",
+  "version": "0.0.2-a",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "author": "33357",
+  "license": "MIT",
+  "scripts": {
+    "prebuild": "cd .. && yarn && yarn run hardhat compile && cp ./logs-persis/deployment.json ./sdk/src/config/ && cd sdk",
+    "build": "tsc && cp ./src/typechain ./dist/ -r",
+    "prepare": "yarn build",
+    "prepublish": "yarn build",
+    "test": "mocha",
+    "test:cov": "nyc mocha",
+    "lint": "eslint \"**/*.{js,ts}\"",
+    "lint:fix": "eslint --fix \"**/*.{js,ts}\"",
+    "format": "prettier --check \"**/*.{ts,js}\"",
+    "format:fix": "prettier --write \"**/*.{ts,js}\""
+  },
+  "devDependencies": {
+    "@types/mocha": "^8.2.2",
+    "@white-matrix/eslint-config-ts": "^0.0.6",
+    "@white-matrix/prettier-config": "^1.0.9",
+    "eslint": "^7.27.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.23.3",
+    "lint": "^0.7.0",
+    "mocha": "^8.4.0",
+    "nyc": "^15.1.0",
+    "ts-node": "^10.0.0",
+    "typescript": "^4.3.2"
+  },
+  "dependencies": {
+    "ethers": "^5.2.0"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org",
+    "access": "public"
+  }
+}

@@ -1,0 +1,82 @@
+.Infos {
+  color: #66b3ff;
+  .head {
+    text-align: center;
+    .wordInfo,
+    .cellInfo {
+      display: inline-block;
+      width: 300px;
+      height: 85px;
+      vertical-align: middle;
+      background-repeat: no-repeat;
+      background-size: cover;
+      cursor: pointer;
+      opacity: 0.6;
+      &:hover {
+        opacity: 1;
+      }
+    }
+    .wordInfo {
+      background-image: url(./backImgs/btnWorld.png);
+      background-image: image-set(
+        url(./backImgs/btnWorld.png) 1x,
+        url(./backImgs/btnWorld@2x.png) 2x
+      );
+    }
+    .cellInfo {
+      background-image: url(./backImgs/btnCell@2x.png);
+      background-image: image-set(
+        url(./backImgs/btnCell.png) 1x,
+        url(./backImgs/btnCell@2x.png) 2x
+      );
+    }
+  }
+
+  .content {
+    position: relative;
+    width: 1024px;
+    height: 143px;
+    padding: 40px 50px;
+    background-image: url(./backImgs/bottomInfoBack@2x.png);
+    background-image: image-set(
+      url(./backImgs/bottomInfoBack.png) 1x,
+      url(./backImgs/bottomInfoBack@2x.png) 2x
+    );
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .bottomBack {
+    width: 1024px;
+  }
+  .rightLines {
+    left: 1030px;
+  }
+  .leftLines {
+    right: 1030px;
+  }
+
+  .block {
+    right: 1080px;
+  }
+  .block2 {
+    right: 1150px;
+  }
+  .block3 {
+    right: 1092px;
+  }
+  .hint {
+    left: 1060px;
+  }
+  .tag {
+    display: inline-block;
+    width: 21px;
+    height: 23px;
+    margin-left: 5px;
+    vertical-align: middle;
+    cursor: pointer;
+    opacity: 0.6;
+  }
+  .tag:hover {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,112 @@
+.Dialog {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 350px;
+  padding: 25px 30px;
+  word-break: break-all;
+  color: #fff;
+  text-align: center;
+  background: #11373f73;
+  border: 1px solid #70c8d5c7;
+  border-radius: 0;
+  outline: 0;
+  transform: translate(-50%, -50%);
+  &::before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    background: #11373f73;
+    content: ' ';
+  }
+  .header {
+    display: flex;
+    svg {
+      width: 28px;
+      height: 28px;
+    }
+  }
+.titleText {
+  margin-left: 10px;
+}
+  a {
+    color: #66b3ff;
+    cursor: pointer;
+  }
+  .title {
+    text-align: left;
+  }
+  .body {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  .footer {
+    text-align: right;
+  }
+  .footer > * {
+    margin-left: 15px;
+  }
+}
+
+@keyframes shakeX {
+  from,
+  to {
+    transform: translate(-50%, -50%);
+  }
+
+  25%,
+  75% {
+    transform: translate(calc(-50% - 10px), -50%);
+  }
+
+  50% {
+    transform: translate(calc(-50% + 10px), -50%);
+  }
+}
+@keyframes shakeY {
+  from,
+  to {
+    transform: translate(-50%, -50%);
+  }
+
+  25%,
+  75% {
+    transform: translate(-50%, calc(-50% - 10px));
+  }
+
+  50% {
+    transform: translate(-50%, calc(-50% + 10px));
+  }
+}
+
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale3d(0.3, 0.3, 0.3);
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+.animate__animated {
+  animation-duration: 0.3s;
+  animation-fill-mode: both;
+}
+.shakeX {
+  .animate__animated;
+  animation-name: shakeX;
+}
+
+.shakeY {
+  .animate__animated;
+  animation-name: shakeY;
+}
+.zoomIn {
+  .animate__animated;
+  animation-name: zoomIn;
+}
+

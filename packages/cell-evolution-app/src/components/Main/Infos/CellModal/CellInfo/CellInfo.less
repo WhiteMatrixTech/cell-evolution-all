@@ -1,0 +1,43 @@
+.CellInfo {
+  h1 {
+    margin-top: 15px;
+    color: #ff7f50;
+    font-size: 20px;
+    opacity: 0.8;
+  }
+  h2 {
+    margin-top: 10px;
+    color: #d3d3d3;
+    font-size: 18px;
+    opacity: 0.8;
+  }
+  .cellTable {
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    table-layout: fixed;
+    border-collapse: collapse;
+    border-spacing: 0;
+
+    th {
+      width: 110px;
+      padding: 5px;
+      text-align: right;
+    }
+    td {
+      padding: 5px 5px 5px 0;
+      text-align: left;
+      word-break: break-all;
+    }
+  }
+  .cellTable.bordered {
+    border: 1px solid #5aa0ad;
+    th {
+      border: 1px solid #5aa0ad;
+    }
+    td {
+      padding: 5px 5px 5px 10px;
+      border: 1px solid #5aa0ad;
+    }
+  }
+}

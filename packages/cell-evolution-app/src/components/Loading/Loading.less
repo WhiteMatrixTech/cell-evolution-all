@@ -1,0 +1,25 @@
+.Loading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 270px;
+      padding: 25px 30px;
+  color: #fff;
+  text-align: center;
+  background: #11373f73;
+  border: 1px solid #70c8d5c7;
+  border-radius: 0;
+  outline: 0;
+  transform: translate(-50%, -50%);
+  &::before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    background: #11373f73;
+    // filter: blur(20px);
+    content: ' ';
+  }
+}
