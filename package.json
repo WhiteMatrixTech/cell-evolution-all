@@ -6,10 +6,10 @@
     "packages/cell-evolution-contracts/sdk"
   ],
   "scripts": {
-    "startWebapp": "yarn workspace cell-evolution-app run start",
-    "compileContract": "yarn workspace cell-evolution-contracts run compile",
-    "testContract": "yarn workspace cell-evolution-contracts run test",
-    "deployContract": "yarn workspace cell-evolution-contracts run deploy",
-    "buildSDK": "yarn workspace @white-matrix/cellevolution-sdk build"
+    "start:webapp": "yarn workspace cell-evolution-app run start",
+    "compile:contract": "yarn workspace cell-evolution-contracts run compile",
+    "test:contract": "yarn workspace cell-evolution-contracts run test",
+    "deploy:contract": "yarn workspace cell-evolution-contracts run deploy",
+    "build:sdk": "yarn workspace @white-matrix/cellevolution-sdk build"
   }
 }
