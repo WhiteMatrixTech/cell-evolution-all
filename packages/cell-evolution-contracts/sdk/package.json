@@ -6,8 +6,8 @@
   "author": "33357",
   "license": "MIT",
   "scripts": {
-    "prebuild": "cd .. && yarn && yarn run hardhat compile && cp ./logs-persis/deployment.json ./sdk/src/config/ && cd sdk",
-    "build": "tsc && cp ./src/typechain ./dist/ -r",
+    "prebuild": "cd .. && yarn && yarn run hardhat compile && cp ./deployment-artifacts/deployment.json ./sdk/src/config/ && cd sdk",
+    "build": "yarn prebuild && yarn tsc && cp ./src/typechain ./dist/ -r",
     "prepare": "yarn build",
     "prepublish": "yarn build",
     "test": "mocha",

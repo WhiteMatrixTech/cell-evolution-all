@@ -4,7 +4,7 @@ import {HardhatRuntimeEnvironment} from 'hardhat/types';
 import pino from 'pino';
 import {getPersisLogDir} from '../utils';
 import fs from 'fs';
-import {RiverBoxDeployment} from '..';
+import {CellEvolutionDeployment} from '..';
 
 const Logger = pino();
 
@@ -15,7 +15,7 @@ task('cellEvolution:verify', 'verify contract').setAction(
     const deploymentLog = `${persisLogDir}/deployment.json`;
     const deploymentFull = JSON.parse(
       (await fs.promises.readFile(deploymentLog)).toString()
-    ) as RiverBoxDeployment;
+    ) as CellEvolutionDeployment;
     const deployment = deploymentFull[hre.network.name];
     Logger.info(`Use deployment information ${JSON.stringify(deployment)}`);
     // try to upgrade to new implementation

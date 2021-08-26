@@ -11,6 +11,6 @@ export interface Deployment {
   CellEvolution: ContractInfo;
 }
 
-export interface RiverBoxDeployment {
+export interface CellEvolutionDeployment {
   [network: string]: Deployment;
 }

@@ -4,6 +4,7 @@ pragma solidity 0.8.4;
 import "./interfaces/ICellEvolutionNewWorld.sol";
 import "@openzeppelin/contracts/utils/Strings.sol";
 import "@openzeppelin/contracts/utils/math/SafeMath.sol";
+import "hardhat/console.sol";
 
 contract CellEvolutionNewWorld is ICellEvolutionNewWorld {
     using SafeMath for uint256;
@@ -35,7 +36,6 @@ contract CellEvolutionNewWorld is ICellEvolutionNewWorld {
         return cellDBs[_cellDBId];
     }
 
-    //设置开始
     function setIsOpen(bool _isopen) public override returns (bool) {
         require(msg.sender == admAdd, "Admin only");
         isOpen = _isopen;
@@ -195,7 +195,7 @@ contract CellEvolutionNewWorld is ICellEvolutionNewWorld {
                 cellHistorys[historyno].worldtitle,
                 " high environmental resistance"
             );
-        } else if (cellHistorys[historyno].division > 500) {
+        } else if (cellHistorys[historyno].environment > 500) {
             cellHistorys[historyno].worldtitle = strConcat(
                 cellHistorys[historyno].worldtitle,
                 " normal environmental resistance"
@@ -213,7 +213,7 @@ contract CellEvolutionNewWorld is ICellEvolutionNewWorld {
         }
 
         if (cellHistorys[historyno].cellno > 1000000000000 && cellHistorys[historyno].day > 999) {
-            worldtype = " zerg World";
+            worldtype = " zerg world";
         }
         if (
             cellHistorys[historyno].surviveability > 100000000000 &&
@@ -229,7 +229,7 @@ contract CellEvolutionNewWorld is ICellEvolutionNewWorld {
             cellHistorys[historyno].division > cellHistorys[historyno].adaption &&
             cellHistorys[historyno].division > cellHistorys[historyno].surviveability
         ) {
-            worldtype = " ocean World";
+            worldtype = " ocean world";
         }
         if (
             cellHistorys[historyno].adaption > 100000000000 &&
@@ -237,7 +237,7 @@ contract CellEvolutionNewWorld is ICellEvolutionNewWorld {
             cellHistorys[historyno].adaption > cellHistorys[historyno].surviveability &&
             cellHistorys[historyno].adaption > cellHistorys[historyno].division
         ) {
-            worldtype = " rock World";
+            worldtype = " rock world";
         }
 
         uint256 ran = randomize(100);
@@ -246,7 +246,7 @@ contract CellEvolutionNewWorld is ICellEvolutionNewWorld {
             cellHistorys[historyno].surviveability == cellHistorys[historyno].adaption &&
             cellHistorys[historyno].adaption == cellHistorys[historyno].division
         ) {
-            worldtype = " gaia World";
+            worldtype = " gaia world";
         }
         if (cellHistorys[historyno].day > 8000 && ran == 1) {
             worldtype = " dark matter world";

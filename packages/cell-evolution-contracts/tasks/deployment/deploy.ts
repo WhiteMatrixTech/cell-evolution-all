@@ -3,14 +3,14 @@ import {task} from 'hardhat/config';
 import {HardhatRuntimeEnvironment} from 'hardhat/types';
 import pino from 'pino';
 import fs from 'fs';
-import {Deployment, RiverBoxDeployment} from '..';
+import {Deployment, CellEvolutionDeployment} from '..';
 import {PayableOverrides} from 'ethers';
 import {getPersisLogDir, AutoTry} from '../utils';
 
 const Logger = pino();
 const taskName = 'cellEvolution:deploy';
 
-task(taskName, 'Deploy Riverbox upgradeable')
+task(taskName, 'Deploy cellEvolution upgradeable')
   .addParam('waitNum', 'The waitNum to transaction')
   .setAction(async (args, hre: HardhatRuntimeEnvironment) => {
     // check log-persis folder
@@ -19,7 +19,7 @@ task(taskName, 'Deploy Riverbox upgradeable')
     const waitNum = parseInt(args['waitNum']);
     const txConfig: PayableOverrides = {};
     const deploymentLog = `${await getPersisLogDir()}/deployment.json`;
-    let deploymentFull: RiverBoxDeployment = {};
+    let deploymentFull: CellEvolutionDeployment = {};
     if (fs.existsSync(deploymentLog)) {
       deploymentFull = JSON.parse(
         (await fs.promises.readFile(deploymentLog)).toString()
@@ -42,7 +42,7 @@ task(taskName, 'Deploy Riverbox upgradeable')
       true
     );
     Logger.info(
-      `RiverBoxRandom deployed at ${deployCellEvolutionResult.contractAddress}`
+      `cellEvolution deployed at ${deployCellEvolutionResult.contractAddress}`
     );
     const cellEvolution = CellEvolutionFactory.attach(
       deployCellEvolutionResult.contractAddress
