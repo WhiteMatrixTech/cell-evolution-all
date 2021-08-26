@@ -3,15 +3,10 @@
 
 - [SDK Package](#sdk-package)
 - [Install](#install)
-- [Browser with Metamask](#browser-with-metamask)
-- [Node with Ethers Provider](#node-with-ethers-provider)
 - [API Reference:](#api-reference)
   - [Interface](#interface)
-    - [RiverBox Interface](#riverbox-interface)
-  - [MockClient Example](#mockclient-example)
 - [SDK-Package:](#sdk-package-1)
   - [Build:](#build)
-  - [Test:](#test)
   - [Publish:](#publish)
 
 ## Install
@@ -21,8 +16,8 @@ yarn add @white-matrix/cellevolution-sdk
 
 ## API Reference:
 ### Interface
-#### RiverBox Interface
-[riverbox-client.ts](./src/client/riverbox-client.ts)
+#### CellEvolution Interface
+[cellEvolution-client.ts](./src/client/cellEvolution-client.ts)
 ```typescript
 export interface CellEvolutionClient {
   connectProvider(address: string, provider: Provider): CellEvolutionClient;
@@ -113,12 +108,6 @@ export interface CellEvolutionClient {
 ### Build:
 ```bash
 yarn run build
-```
-
-### Test:
-Start local hardhat node first and deploy the contract
-```bash
-CONTRACT_ADDRESS={ADDRESS} yarn run test
 ```
 
 ### Publish:

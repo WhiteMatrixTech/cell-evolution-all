@@ -1,7 +1,5 @@
 node_modules
 
-node_modules
-
 #Hardhat files
 cache
 artifacts
@@ -9,3 +7,6 @@ artifacts
 typechain/
 soljson-v0.8.4+commit.c7e474f2.js
 .vscode/
+
+envs/
+sdk/tsconfig.tsbuildinfo

@@ -9,7 +9,7 @@
   "rinkeby": {
     "operator": "0x65a227f7F8f929cBB25843F4d9d7AF9a07f8FACE",
     "CellEvolution": {
-      "address": "0x7270F68bf44CA66038A0ffE93d29F5A6004aCDdf",
+      "address": "0x4bDB1565D523429f05D75C2D630175F9349f141c",
       "impl": "CellEvolutionNewWorld"
     }
   }

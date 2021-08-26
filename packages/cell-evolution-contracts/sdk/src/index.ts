@@ -11,7 +11,6 @@ export function cellEvolutionProvider(mock = false): CellEvolutionClient {
 
 export { CellEvolutionClient } from './client';
 export * from './model';
-export * from './util';
 export {
   CellEvolutionNewWorld as CellEvolution,
   CellEvolutionNewWorld__factory as CellEvolution__factory

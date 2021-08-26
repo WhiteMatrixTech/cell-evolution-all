@@ -7,6 +7,7 @@ import '@openzeppelin/hardhat-upgrades';
 import '@nomiclabs/hardhat-etherscan';
 import '@typechain/hardhat';
 import "hardhat-gas-reporter";
+import 'solidity-coverage';
 import "./tasks";
 import dotenv from 'dotenv';
 
@@ -48,6 +49,7 @@ const config: HardhatUserConfig = {
         accountsBalance: '100000000000000000000000000',
       },
       blockGasLimit: 60000000,
+      initialBaseFeePerGas: 0,
     },
     localhost: {
       url: 'http://localhost:8545',

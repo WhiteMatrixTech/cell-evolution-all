@@ -1,9 +1,4 @@
 # cellerfork-contract
-- [SDK package](./sdk/)
-- [Sample Scripts](#sample-scripts)
-- [RiverBox Dev](#riverbox-dev)
-- [Admin SOP](#admin-sop)
-- [Latest Contract Address](./logs-persis/deployment.json)
 
 ## Sample Scripts
 ### Install dependencies
@@ -16,41 +11,54 @@ yarn
 yarn run hardhat compile
 ```
 
-### Run lint 
+### test
+```bash
+yarn hardhat test
+```
+
+### Run coverage
+```bash
+yarn hardhat coverage
+```
+
+### Run lint
 ```bash
 yarn run lint
 yarn run lint:fix
 ```
 
-### Run format 
+### Run format
+
+[ChainIDE-SOP](./pages/ChainIDE-SOP.md)
+
 ```bash
 yarn run format
 yarn run format:fix
 ```
 
-### Generate types for SDK 
+### Generate types for SDK
 ```bash
-yarn run hardhat typechain 
+yarn run hardhat typechain
 ```
 
 ### Hardhat start local test node
 ```bash
 yarn run hardhat node --network hardhat --no-deploy --show-accounts
-
 ```
 
 Deploy
 ``` bash
-LOAD_TASK=True yarn run hardhat cellEvolution:deploy --wait-num 1 --network localhost | tee -a ./logs/deployToLocal.log
+yarn run hardhat cellEvolution:deploy --wait-num 1 --network localhost | tee -a ./logs/deployToLocal.log
 ```
 
 ### rinkeby
 
 Deploy
 ``` bash
-LOAD_TASK=True yarn run env-cmd -f ./envs/.env.eth.rinkeby yarn run hardhat cellEvolution:deploy --wait-num 1 --network rinkeby | tee -a ./logs/deployToLocal.log
+yarn run env-cmd -f ./envs/.env.eth.rinkeby yarn run hardhat cellEvolution:deploy --wait-num 1 --network rinkeby | tee -a ./logs/deployToLocal.log
 ```
+
 verify
 ``` bash
-LOAD_TASK=True yarn run env-cmd -f ./envs/.env.eth.rinkeby yarn run hardhat cellEvolution:verify --network rinkeby | tee -a ./logs/verifyRinkeby.log
+yarn run env-cmd -f ./envs/.env.eth.rinkeby yarn run hardhat cellEvolution:verify --network rinkeby | tee -a ./logs/verifyRinkeby.log
 ```

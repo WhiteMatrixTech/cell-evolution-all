@@ -169,3 +169,19 @@ Compilation finished successfully
  ··························|··············
  |  Strings                ·       0.08  │
  ·-------------------------|-------------·
+$ /home/shen/github/cell-evolution-all/node_modules/.bin/env-cmd -f ./envs/.env.eth.rinkeby yarn run hardhat cellEvolution:verify --network rinkeby
+$ /home/shen/github/cell-evolution-all/node_modules/.bin/hardhat cellEvolution:verify --network rinkeby
+{"level":30,"time":1629960070345,"pid":370434,"hostname":"ubuntu","msg":"Use deployment information {\"operator\":\"0x65a227f7F8f929cBB25843F4d9d7AF9a07f8FACE\",\"CellEvolution\":{\"address\":\"0x4bDB1565D523429f05D75C2D630175F9349f141c\",\"impl\":\"CellEvolutionNewWorld\"}}"}
+Nothing to compile
+No need to generate any newer typings.
+ ·-------------------------|-------------·
+ |  [1mContract Name[22m          ·  Size (Kb)  │
+ ··························|··············
+ |  CellEvolutionNewWorld  ·      15.93  │
+ ··························|··············
+ |  console                ·       0.08  │
+ ··························|··············
+ |  SafeMath               ·       0.08  │
+ ··························|··············
+ |  Strings                ·       0.08  │
+ ·-------------------------|-------------·

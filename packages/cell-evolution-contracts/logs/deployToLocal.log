@@ -130,29 +130,42 @@ load
 └─────────┴────────────────────────┴─────────┴──────────┴──────────────────────────────┘
 {"level":30,"time":1628750148191,"pid":1092427,"hostname":"ubuntu","msg":"RiverBoxRandom deployed at 0xb34135Ec760891f5F17bECB223144b3618A95d7f"}
 Done in 23.65s.
-$ /home/shen/github/33576e7210664d9087f58c0b27b0afae/node_modules/.bin/env-cmd -f ./envs/.env.eth.rinkeby yarn run hardhat cellEvolution:deploy --wait-num 1 --network rinkeby
-$ /home/shen/github/33576e7210664d9087f58c0b27b0afae/node_modules/.bin/hardhat cellEvolution:deploy --wait-num 1 --network rinkeby
+$ /home/shen/github/cell-evolution-all/node_modules/.bin/env-cmd -f ./envs/.env.eth.rinkeby yarn run hardhat cellEvolution:deploy --wait-num 1 --network rinkeby
+$ /home/shen/github/cell-evolution-all/node_modules/.bin/hardhat cellEvolution:deploy --wait-num 1 --network rinkeby
 load
-{"level":30,"time":1629453431756,"pid":1373493,"hostname":"ubuntu","msg":"deploy CellEvolutionNewWorld"}
-{"level":30,"time":1629453432908,"pid":1373493,"hostname":"ubuntu","msg":"execute operation transaction:0, deploy CellEvolution, try 1"}
-{"level":30,"time":1629453453045,"pid":1373493,"hostname":"ubuntu","msg":"success transaction:0,deploy CellEvolution"}
+{"level":30,"time":1629959412181,"pid":365570,"hostname":"ubuntu","msg":"deploy CellEvolutionNewWorld"}
+{"level":30,"time":1629959413271,"pid":365570,"hostname":"ubuntu","msg":"execute operation transaction:0, deploy CellEvolution, try 1"}
+{"level":30,"time":1629959419502,"pid":365570,"hostname":"ubuntu","msg":"execute operation transaction:0, deploy CellEvolution, try 2"}
+{"level":30,"time":1629959424032,"pid":365570,"hostname":"ubuntu","msg":"execute operation transaction:0, deploy CellEvolution, try 3"}
+
+info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
+info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
+$ /home/shen/github/cell-evolution-all/node_modules/.bin/hardhat compile yarn run env-cmd -f ./envs/.env.eth.rinkeby yarn run hardhat cellEvolution:deploy --wait-num 1 --network rinkeby
+
+info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
+$ /home/shen/github/cell-evolution-all/node_modules/.bin/env-cmd -f ./envs/.env.eth.rinkeby yarn run hardhat cellEvolution:deploy --wait-num 1 --network rinkeby
+$ /home/shen/github/cell-evolution-all/node_modules/.bin/hardhat cellEvolution:deploy --wait-num 1 --network rinkeby
+load
+{"level":30,"time":1629959476612,"pid":366352,"hostname":"ubuntu","msg":"deploy CellEvolutionNewWorld"}
+{"level":30,"time":1629959477615,"pid":366352,"hostname":"ubuntu","msg":"execute operation transaction:0, deploy CellEvolution, try 1"}
+{"level":30,"time":1629959545082,"pid":366352,"hostname":"ubuntu","msg":"success transaction:0,deploy CellEvolution"}
 ┌─────────┬────────────────────────┬─────────┬──────────┬─────────────────────────────┐
 │ (index) │      functionName      │ gasUsed │ gasPrice │             fee             │
 ├─────────┼────────────────────────┼─────────┼──────────┼─────────────────────────────┤
-│    0    │ 'deploy CellEvolution' │ 3664082 │ '1 gwei' │ '0.00366408203664082 ether' │
-│    1    │       'totalGas'       │ 3664082 │ '1 gwei' │ '0.00366408203664082 ether' │
+│    0    │ 'deploy CellEvolution' │ 3664946 │ '1 gwei' │ '0.00366494603664946 ether' │
+│    1    │       'totalGas'       │ 3664946 │ '1 gwei' │ '0.00366494603664946 ether' │
 └─────────┴────────────────────────┴─────────┴──────────┴─────────────────────────────┘
-{"level":30,"time":1629453453048,"pid":1373493,"hostname":"ubuntu","msg":"RiverBoxRandom deployed at 0x007901EcB8C29ba49b73897752312850f768c539"}
-$ /home/shen/github/33576e7210664d9087f58c0b27b0afae/node_modules/.bin/env-cmd -f ./envs/.env.eth.rinkeby yarn run hardhat cellEvolution:deploy --wait-num 1 --network rinkeby
-$ /home/shen/github/33576e7210664d9087f58c0b27b0afae/node_modules/.bin/hardhat cellEvolution:deploy --wait-num 1 --network rinkeby
+{"level":30,"time":1629959545085,"pid":366352,"hostname":"ubuntu","msg":"cellEvolution deployed at 0x5f3a2Ebd886A901A41bf080bf6FAdbb2a6081A8d"}
+$ /home/shen/github/cell-evolution-all/node_modules/.bin/env-cmd -f ./envs/.env.eth.rinkeby yarn run hardhat cellEvolution:deploy --wait-num 1 --network rinkeby
+$ /home/shen/github/cell-evolution-all/node_modules/.bin/hardhat cellEvolution:deploy --wait-num 1 --network rinkeby
 load
-{"level":30,"time":1629455395669,"pid":1380256,"hostname":"ubuntu","msg":"deploy CellEvolutionNewWorld"}
-{"level":30,"time":1629455397733,"pid":1380256,"hostname":"ubuntu","msg":"execute operation transaction:0, deploy CellEvolution, try 1"}
-{"level":30,"time":1629455434755,"pid":1380256,"hostname":"ubuntu","msg":"success transaction:0,deploy CellEvolution"}
+{"level":30,"time":1629959665492,"pid":367753,"hostname":"ubuntu","msg":"deploy CellEvolutionNewWorld"}
+{"level":30,"time":1629959666577,"pid":367753,"hostname":"ubuntu","msg":"execute operation transaction:0, deploy CellEvolution, try 1"}
+{"level":30,"time":1629959689665,"pid":367753,"hostname":"ubuntu","msg":"success transaction:0,deploy CellEvolution"}
 ┌─────────┬────────────────────────┬─────────┬──────────┬──────────────────────────────┐
 │ (index) │      functionName      │ gasUsed │ gasPrice │             fee              │
 ├─────────┼────────────────────────┼─────────┼──────────┼──────────────────────────────┤
-│    0    │ 'deploy CellEvolution' │ 3664082 │ '1 gwei' │ '0.003664082032976738 ether' │
-│    1    │       'totalGas'       │ 3664082 │ '1 gwei' │ '0.003664082032976738 ether' │
+│    0    │ 'deploy CellEvolution' │ 3664946 │ '1 gwei' │ '0.003664946040314406 ether' │
+│    1    │       'totalGas'       │ 3664946 │ '1 gwei' │ '0.003664946040314406 ether' │
 └─────────┴────────────────────────┴─────────┴──────────┴──────────────────────────────┘
-{"level":30,"time":1629455434758,"pid":1380256,"hostname":"ubuntu","msg":"RiverBoxRandom deployed at 0x7270F68bf44CA66038A0ffE93d29F5A6004aCDdf"}
+{"level":30,"time":1629959689668,"pid":367753,"hostname":"ubuntu","msg":"cellEvolution deployed at 0x4bDB1565D523429f05D75C2D630175F9349f141c"}
