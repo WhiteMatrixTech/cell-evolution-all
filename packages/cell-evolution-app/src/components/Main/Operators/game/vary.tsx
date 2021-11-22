@@ -1,3 +1,4 @@
+import { t } from '../../../../i18n';
 import type { IGameData } from '../../../../store/gameSlice';
 import { error } from '../../../Dialog';
 import { success } from '../../../Dialog/Dialog';
@@ -10,10 +11,11 @@ import styles from './styles.less';
  * @returns
  */
 export async function vary(gameData: IGameData) {
+  const mutationsFailure = t('whyMutationsFailure')
   return new Promise((resolve, reject) => {
     if (gameData.cell <= 0) {
-      error('变异失败', '至少需要1个细胞才能变异');
-      reject(new Error('至少需要1个细胞才能变异'));
+      error(t('mutationsFailure'), mutationsFailure);
+      reject(new Error(mutationsFailure));
       return;
     }
     const lifeCycle = gameData.lifeCycle - 1;
@@ -43,11 +45,11 @@ export async function vary(gameData: IGameData) {
         env,
       });
       success(
-        '变异成功',
+        t('successfullMutations'),
         <ul className={styles.result}>
-          <li>生命周期 -1</li>
-          <li>细胞数 {cellChange}</li>
-          <li>存活日 +1</li>
+          <li>{t('lifeCycle')}&nbsp; -1</li>
+          <li>{t('cellCount')}&nbsp; {cellChange}</li>
+          <li>{t('survivalDay')}&nbsp; +1</li>
         </ul>,
       );
       return;
@@ -72,14 +74,14 @@ export async function vary(gameData: IGameData) {
         env,
       });
       success(
-        '变异成功',
+        t('successfullMutations'),
         <ul className={styles.result}>
-          <li>生命周期 -1</li>
-          <li>细胞数 {cellChange}</li>
-          <li>繁殖性 +{mDivChange}</li>
-          <li>适应性 +{mAdaChange}</li>
-          <li>生存性 +{mSurChange}</li>
-          <li>存活日 +1</li>
+          <li>{t('lifeCycle')}&nbsp; -1</li>
+          <li>{t('cellCount')}&nbsp; {cellChange}</li>
+          <li>{t('reproductive')}&nbsp; +{mDivChange}</li>
+          <li>{t('adaptability')}&nbsp; +{mAdaChange}</li>
+          <li>{t('survivability')}&nbsp; +{mSurChange}</li>
+          <li>{t('survivalDay')}&nbsp; +1</li>
         </ul>,
       );
       return;
@@ -100,13 +102,13 @@ export async function vary(gameData: IGameData) {
       env,
     });
     success(
-      '变异成功',
+      t('successfullMutations'),
       <ul className={styles.result}>
-        <li>生命周期 -1</li>
-        <li>繁殖性 +{mDivChange}</li>
-        <li>适应性 +{mAdaChange}</li>
-        <li>生存性 +{mSurChange}</li>
-        <li>存活日 +1</li>
+        <li>{t('lifeCycle')}&nbsp; -1</li>
+        <li>{t('reproductive')}&nbsp; +{mDivChange}</li>
+        <li>{t('adaptability')}&nbsp; +{mAdaChange}</li>
+        <li>{t('survivability')}&nbsp; +{mSurChange}</li>
+        <li>{t('survivalDay')}&nbsp; +1</li>
       </ul>,
     );
   });

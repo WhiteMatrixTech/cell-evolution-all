@@ -1,3 +1,4 @@
+import { t } from '../../../../i18n';
 import type { IGameData } from '../../../../store/gameSlice';
 import { error, success } from '../../../Dialog';
 import styles from './styles.less';
@@ -10,17 +11,19 @@ import styles from './styles.less';
  * @param gameData
  */
 export async function dormant(gameData: IGameData) {
+  const dormantFailure1 = t('whyDormantFailure1');
+  const dormantFailure2 = t('whyDormantFailure2')
   return new Promise((resolve, reject) => {
     if (gameData.cell <= 0) {
-      error('休眠失败', '至少需要1个细胞才能休眠');
-      reject(new Error('至少需要1个细胞才能休眠'));
+      error(t('dormantFailure'), dormantFailure1);
+      reject(new Error(dormantFailure1));
       return;
     }
     let surviveLife = Math.floor(gameData.survivability * 0.1);
     if (surviveLife < 0) {
       surviveLife = 0;
-      error('休眠失败', '数据错误,作弊行为或者网络卡顿～');
-      reject(new Error('数据错误,作弊行为或者网络卡顿～'));
+      error(t('dormantFailure'), dormantFailure2);
+      reject(new Error(dormantFailure2));
       return;
     }
     if (surviveLife >= 9) surviveLife = 9;
@@ -40,11 +43,11 @@ export async function dormant(gameData: IGameData) {
       env,
     });
     success(
-      '休眠成功',
+      t('successfullDormant'),
       <ul className={styles.result}>
-        <li>生命周期 {lifeCycleChange >= 0 ? `+${lifeCycleChange}` : lifeCycleChange}</li>
-        <li>细胞数 {cellChange >= 0 ? `+${cellChange}` : cellChange}</li>
-        <li>存活日 +1</li>
+        <li>{t('lifeCycle')}&nbsp; {lifeCycleChange >= 0 ? `+${lifeCycleChange}` : lifeCycleChange}</li>
+        <li>{t('cellCount')}&nbsp; {cellChange >= 0 ? `+${cellChange}` : cellChange}</li>
+        <li>{t('survivalDay')}&nbsp; +1</li>
       </ul>,
     );
   });

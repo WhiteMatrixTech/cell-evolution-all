@@ -2,6 +2,7 @@ import type { IGameData } from '../../../../store/gameSlice';
 import { error, success } from '../../../Dialog';
 import styles from './styles.less';
 import { endGame, getInitGameData } from './endGame';
+import { t } from '../../../../i18n';
 
 /**
  * 进化
@@ -14,10 +15,11 @@ import { endGame, getInitGameData } from './endGame';
  * @param gameData
  */
 export async function evolute(gameData: IGameData) {
+  const evolutionFailure = t('whyEvolutionFailure')
   return new Promise((resolve, reject) => {
     if (gameData.cell <= 0) {
-      error('进化失败', '至少需要1个细胞才能进化');
-      reject(new Error('至少需要1个细胞才能进化'));
+      error(t('EvolutionFailure'), evolutionFailure);
+      reject(new Error(t('whyEvolutionFailure')));
       return;
     }
     const lifeCycle = gameData.lifeCycle - 5;
@@ -39,8 +41,8 @@ export async function evolute(gameData: IGameData) {
         gameData.reproduction >= balanceCheck * 0.5
       )
     ) {
-      error('进化失败', '需要属性平衡才能进化');
-      reject(new Error('需要属性平衡才能进化'));
+      error(t('EvolutionFailure'), evolutionFailure);
+      reject(new Error(t('whyEvolutionFailure')));
       return;
     }
 
@@ -56,13 +58,13 @@ export async function evolute(gameData: IGameData) {
     const day = gameData.day + 1;
     const env = Math.floor(day / 10);
     success(
-      '进化成功',
+      t('successfullEvolutionary'),
       <ul className={styles.result}>
-        <li>生命周期 -5</li>
-        <li>繁殖性 +{reproduction}</li>
-        <li>适应性 +{adaptability}</li>
-        <li>生存性 +{survivability}</li>
-        <li>存活日 +1</li>
+        <li>{t('lifeCycle')} -5</li>
+        <li>{t('reproductive')} +{reproduction}</li>
+        <li>{t('adaptability')} +{adaptability}</li>
+        <li>{t('survivability')} +{survivability}</li>
+        <li>{t('survivalDay')} +1</li>
       </ul>,
     );
     resolve({

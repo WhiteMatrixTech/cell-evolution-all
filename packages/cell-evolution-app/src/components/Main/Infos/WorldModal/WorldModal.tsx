@@ -3,7 +3,7 @@ import { useState } from 'react';
 import Modal from 'react-modal';
 import { Button } from '../../../Button';
 import { Input } from '../../../Input';
-
+import { t } from '../../../../i18n';
 import styles from './WorldModal.less';
 import { getWorldInfo } from '../game/worldInfo';
 import { useCallback } from 'react';
@@ -27,6 +27,7 @@ const customStyles: Modal.Styles = {
 
 export function WorldModal(props: WorldModalProps) {
   const { className, modalIsOpen, closeModal } = props;
+  // const { t } = useTranslation();
 
   const [worldDetailIsOpen, setWorldDetailIsOpen] = useState(false);
   const [cellsList, setCellsList] = useState<ICellData[]>([]);
@@ -41,22 +42,22 @@ export function WorldModal(props: WorldModalProps) {
   };
   const [worldId, setWorldId] = useState('');
   const openDetailModal = useCallback(() => {
-    const close = loading(`读取世界编号<${worldId}>资料中..`);
+    const close = loading(t('loading2', { id: worldId }));
     getWorldInfo(worldId)
       .then((world) => {
         dialog(<WorldInfo data={world} />, {
           type: DialogType.SUCCESS,
-          title: `读取世界信息成功`,
-          okText: '详情',
+          title: t('worldInformation'),
+          okText: t('details'),
           onOk: () => {
             // open worldList
             openWorldDetailModal(world.cells);
           },
-          onCancel: () => {},
+          onCancel: () => { },
         });
       })
       .catch((e) => {
-        error(`读取世界数据失败`, e.message);
+        error(t('readWorldDataFailed'), e.message);
       })
       .finally(close);
   }, [worldId]);
@@ -79,19 +80,19 @@ export function WorldModal(props: WorldModalProps) {
         shouldCloseOnOverlayClick={false}
         shouldCloseOnEsc={false}
       >
-        <h3 className={styles.title}>输入想要读取世界的ID</h3>
+        <h3 className={styles.title}>{t('enterTheWordID')}</h3>
         <div className={styles.body}>
           <Input
-            placeholder="世界ID"
+            placeholder={t('worldID')}
             value={worldId}
             onChange={(e) => setWorldId(e.currentTarget.value)}
           />
         </div>
         <div className={styles.footer}>
           <Button type="primary" onClick={openDetailModal}>
-            确定
+            {t('ok')}
           </Button>
-          <Button onClick={closeWorldModel}>取消</Button>
+          <Button onClick={closeWorldModel}>{t('cancel')}</Button>
         </div>
       </Modal>
 
@@ -108,7 +109,7 @@ export function WorldModal(props: WorldModalProps) {
           </div>
           <div className={styles.footer}>
             <Button type="primary" onClick={closeWorldDetailModal}>
-              确定
+              {t('ok')}
             </Button>
           </div>
         </div>

@@ -4,13 +4,16 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { Provider } from 'react-redux';
+import { I18nextProvider } from './i18n';
 import { store } from './store';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Provider store={store}>
-      <App />
-    </Provider>
+    <I18nextProvider>
+      <Provider store={store}>
+        <App />
+      </Provider>
+    </I18nextProvider>
   </React.StrictMode>,
   document.getElementById('root'),
 );

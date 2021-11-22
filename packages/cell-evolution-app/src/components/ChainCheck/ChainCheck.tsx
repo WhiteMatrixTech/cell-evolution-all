@@ -4,6 +4,8 @@ import { useEffect } from 'react';
 import type { IWalletInfo } from '../../utils/etherClient';
 import { contractChainId, contractChainName } from '../../utils/etherClient';
 import { etherClient } from '../../utils/etherClient';
+import { switchLanguage, useTranslation } from '../../i18n'
+
 
 import styles from './ChainCheck.less';
 
@@ -13,7 +15,9 @@ interface ChainCheckProps {
 
 export function ChainCheck(props: ChainCheckProps) {
   const { className } = props;
+  const { t, i18n } = useTranslation();
 
+  console.log('language', t(i18n.language))
   const [loaded, setLoaded] = useState(false);
   const [walletInfo, setWalletInfo] = useState<IWalletInfo | null>(null);
   useEffect(() => {
@@ -36,6 +40,10 @@ export function ChainCheck(props: ChainCheckProps) {
 
   return (
     <div className={cn(styles.ChainCheck, className)}>
+      <div className={styles.language}>
+        <div className={cn({ [styles.selected]: t(i18n.language) === '中文' })} onClick={() => switchLanguage('zh')}>{t('zh')}</div>
+        <div className={cn({ [styles.selected]: t(i18n.language) === 'en-US' })} onClick={() => switchLanguage('en-US')}>{t('en')}</div>
+      </div>
       {loaded && (
         <>
           {!walletInfo && <div className={styles.error}>no metaMask connected</div>}
