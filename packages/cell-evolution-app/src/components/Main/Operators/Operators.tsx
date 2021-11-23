@@ -20,7 +20,7 @@ import { dormant } from './game/dormant';
 import { apoptosis } from './game/apoptosis';
 // import { loading } from '../../Loading/Loading';
 import { inherit } from './game/inherit';
-import { t } from '../../../i18n'
+import { useTranslation } from '../../../i18n'
 
 interface OperatorsProps {
   className?: string;
@@ -28,7 +28,7 @@ interface OperatorsProps {
 
 export function Operators(props: OperatorsProps) {
   const { className } = props;
-  // const { t } = useTranslation();
+  const { t } = useTranslation();
   const dispatch = useAppDispatch();
 
   const gameData = useAppSelector(selectGame);
