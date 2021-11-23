@@ -12,6 +12,7 @@
     "deploy:contract": "yarn workspace cell-evolution-contracts run deploy",
     "build:sdk": "yarn workspace @white-matrix/cellevolution-sdk build",
     "start:webapp": "yarn workspace cell-evolution-app run start",
-    "verify:contract": "yarn workspace cell-evolution-contracts run verify"
+    "verify:contract": "yarn workspace cell-evolution-contracts run verify",
+    "build":"yarn workspace cell-evolution-app run build"
   }
 }
