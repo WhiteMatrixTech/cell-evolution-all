@@ -12,7 +12,10 @@
 
 </div>
 
-
+## ⏬ Install git
+```
+apk add git
+```
 
 ## ⏬ 下载源码
 
