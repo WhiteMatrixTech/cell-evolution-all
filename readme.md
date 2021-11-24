@@ -4,23 +4,23 @@
   </a>
 </p>
 
-<h1 align="center">细胞进化(Cell Evolution)</h1>
+<h1 align="center">Cell Evolution</h1>
 
 <div align="center">
 
-细胞进化是第一款基于区块链的去中心化的沙盒经营策略游戏，所有的玩家扮演一个细胞族群。在这个族群里，我们需要平衡我们总体的适应性，生存性与繁殖性。当我们的细胞族群的方向失衡，我们整体将会进化失败。这不仅仅是个游戏，也是个真正的社会群体实验。你在这里扮演了一个原始细胞，而无数个你将会决定我们共同的命运。接下来，开启的进化之旅！
-
+Cell Evolution is the first decentralized sandbox business strategy game based on blockchain, in which all players act as a cell group. In this group, we need to balance our overall adaptability, survivability and reproduction. When the direction of our cell population is out of balance, we will fail to evolve as a whole. This is not just a game, but also a real social group experiment. You play a primitive cell here, and countless you will determine our common destiny. Next, start the evolutionary journey!
+  
 </div>
 
 
 
-## ⏬ 下载源码
+## ⏬ Download Source Code
 
 ```bash
 git clone https://github.com/WhiteMatrixTech/cell-evolution-all.git
 ```
 
-## 📦 安装依赖
+## 📦 Install Dependency
 
 ```bash
 cd cell-evolution-all
@@ -30,22 +30,22 @@ cd cell-evolution-all
 yarn
 ```
 
-## 💻 编译合约
+## 💻 Compile contract
 ```
 yarn compile:contract
 ```
 
-## 💻 发布合约
+## 💻 Depoly Contract
 ```
 yarn deploy:contract
 ```
 
-## 💻 打包sdk
+## 💻 Package SDK
 ```
 yarn build:sdk
 ```
 
-## 🧿 开发dapp
+## 🧿 Start the Front-end
 ```
 yarn start:webapp
 ```

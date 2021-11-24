@@ -3,6 +3,7 @@ import { useMemo } from 'react';
 import { WorldImg } from './WorldImg';
 
 import styles from './WorldInfo.less';
+import { useTranslation } from '../../../../../i18n'
 
 interface WorldInfoProps {
   className?: string;
@@ -22,6 +23,7 @@ export interface IWorldInfo {
 }
 export function WorldInfo(props: WorldInfoProps) {
   const { className, data } = props;
+  const { t } = useTranslation()
 
   const idx = useMemo(() => {
     try {
@@ -36,45 +38,44 @@ export function WorldInfo(props: WorldInfoProps) {
   return (
     <div className={cn(styles.WorldInfo, className)}>
       <WorldImg idx={idx} />
-      <h3 className={styles.title}>编号&lt;{data?.id}&gt;世界数据</h3>
+      <h3 className={styles.title}>{t('number')}&lt;{data?.id}&gt;{t('worldData')}</h3>
       <table className={cn(styles.worldTable, styles.bordered)}>
         <tbody>
           <tr>
-            <th>世界细胞数:</th>
+            <th>{t('worldCellCount')}</th>
             <td>{data?.cell}</td>
           </tr>
           <tr>
-            <th>世界适应性:</th>
+            <th>{t('worldAdaptability')}</th>
             <td>{data?.adaptability}</td>
           </tr>
           <tr>
-            <th>世界生存性:</th>
+            <th>{t('worldSurvivability')}</th>
             <td>{data?.survivability}</td>
           </tr>
           <tr>
-            <th>世界繁殖性:</th>
+            <th>{t('worldReproductiveness')}</th>
             <td>{data?.reproduction}</td>
           </tr>
           <tr>
-            <th>世界外部环境:</th>
+            <th>{t('worldExternalEnvironmen')}</th>
             <td>{data?.env}</td>
           </tr>
           <tr>
-            <th>世界存活日:</th>
+            <th>{t('worldSurvivalDay')}</th>
             <td>{data?.day}</td>
           </tr>
           <tr>
-            <th>总体得分:</th>
+            <th>{t('overallScore')}</th>
             <td>{data?.totalScore}</td>
           </tr>
           <tr>
-            <th>世界称号:</th>
+            <th>{t('worldTitle')}</th>
             <td>{data?.worldTitle}</td>
           </tr>
           <tr>
             <td colSpan={2}>
-              已经有{data?.id}
-              个族群毁灭，请注意族群的平衡发展,一味的追逐高分也许并不能带来胜利。-Ling
+              {t('groupHasBeenDestroyed', { number: data?.id })}
             </td>
           </tr>
         </tbody>

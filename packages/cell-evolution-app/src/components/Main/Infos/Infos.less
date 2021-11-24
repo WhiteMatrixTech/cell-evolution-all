@@ -16,6 +16,20 @@
         opacity: 1;
       }
     }
+    .wordInfoEn,
+    .cellInfoEn {
+      display: inline-block;
+      width: 300px;
+      height: 85px;
+      vertical-align: middle;
+      background-repeat: no-repeat;
+      background-size: cover;
+      cursor: pointer;
+      opacity: 0.6;
+      &:hover {
+        opacity: 1;
+      }
+    }
     .wordInfo {
       background-image: url(./backImgs/btnWorld.png);
       background-image: image-set(
@@ -23,11 +37,25 @@
         url(./backImgs/btnWorld@2x.png) 2x
       );
     }
+    .wordInfoEn{
+      background-image: url(./backImgs/btnWorld_en.png);
+      background-image: image-set(
+        url(./backImgs/btnWorld_en.png) 1x,
+        url(./backImgs/btnWorld_en@2x.png) 2x
+      );
+    }
     .cellInfo {
       background-image: url(./backImgs/btnCell@2x.png);
       background-image: image-set(
         url(./backImgs/btnCell.png) 1x,
         url(./backImgs/btnCell@2x.png) 2x
+      );
+    }
+    .cellInfoEn {
+      background-image: url(./backImgs/btnCell_en@2x.png);
+      background-image: image-set(
+        url(./backImgs/btnCell_en.png) 1x,
+        url(./backImgs/btnCell_en@2x.png) 2x
       );
     }
   }

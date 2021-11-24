@@ -20,6 +20,7 @@ import { dormant } from './game/dormant';
 import { apoptosis } from './game/apoptosis';
 // import { loading } from '../../Loading/Loading';
 import { inherit } from './game/inherit';
+import { t } from '../../../i18n'
 
 interface OperatorsProps {
   className?: string;
@@ -27,6 +28,7 @@ interface OperatorsProps {
 
 export function Operators(props: OperatorsProps) {
   const { className } = props;
+  // const { t } = useTranslation();
   const dispatch = useAppDispatch();
 
   const gameData = useAppSelector(selectGame);
@@ -68,7 +70,7 @@ export function Operators(props: OperatorsProps) {
   }, [dispatch, gameData]);
 
   const apoptosisOperator = useCallback(() => {
-    confirmDialog('凋亡后将会直接结束游戏，是否确定凋亡?', () => {
+    confirmDialog(t('afterApoptosis'), () => {
       apoptosis(gameData)
         .then((data) => {
           dispatch(setData(data));
@@ -92,20 +94,20 @@ export function Operators(props: OperatorsProps) {
     <div className={cn(styles.Operators, className)}>
       <OperatorItem
         icon={reproduceIcon}
-        text="繁殖"
+        text={t('reproduce')}
         operator={reproduceOperator}
         className="reproduce"
       />
-      <OperatorItem icon={evoluteIcon} text="进化" operator={evoluteOperator} className="evolute" />
-      <OperatorItem icon={varyIcon} text="变异" operator={varyOperator} className="vary" />
-      <OperatorItem icon={dormantIcon} text="休眠" operator={dormantOperator} className="dormant" />
+      <OperatorItem icon={evoluteIcon} text={t('evolution')} operator={evoluteOperator} className="evolute" />
+      <OperatorItem icon={varyIcon} text={t('mutations')} operator={varyOperator} className="vary" />
+      <OperatorItem icon={dormantIcon} text={t('dormant')} operator={dormantOperator} className="dormant" />
       <OperatorItem
         icon={apoptosisIcon}
-        text="凋亡"
+        text={t('apoptosis')}
         operator={apoptosisOperator}
         className="apoptosis"
       />
-      <OperatorItem icon={inheritIcon} text="遗传" operator={inheritOperator} className="inherit" />
+      <OperatorItem icon={inheritIcon} text={t('genetic')} operator={inheritOperator} className="inherit" />
     </div>
   );
 }

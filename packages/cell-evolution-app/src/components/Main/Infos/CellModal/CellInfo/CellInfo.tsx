@@ -5,6 +5,7 @@ import type { ICellData } from '../../game/cellInfo';
 import { CellImg } from './CellImg';
 
 import styles from './CellInfo.less';
+import { useTranslation } from '../../../../../i18n'
 
 interface CellInfoProps {
   className?: string;
@@ -14,6 +15,7 @@ interface CellInfoProps {
 
 export function CellInfo(props: CellInfoProps) {
   const { className, data, bordered = false } = props;
+  const { t } = useTranslation();
 
   const idx = useMemo(() => {
     try {
@@ -28,8 +30,8 @@ export function CellInfo(props: CellInfoProps) {
   return (
     <div className={cn(styles.CellInfo, className)}>
       <CellImg idx={idx} />
-      <h1>编号&lt;{data.id}&gt;细胞数据</h1>
-      <h2>细胞数: {data.cell}</h2>
+      <h1>{t('number')}&lt;{data.id}&gt;{t('cellData')}</h1>
+      <h2>{t('cellCount')}: {data.cell}</h2>
       <table
         className={cn(styles.cellTable, {
           [styles.bordered]: bordered,
@@ -37,39 +39,39 @@ export function CellInfo(props: CellInfoProps) {
       >
         <tbody>
           <tr>
-            <th>最终评价:</th>
+            <th>{t('finalEvaluation')}</th>
             <td>{getFinalTitleByCellData(data)}</td>
           </tr>
           <tr>
-            <th>适应性:</th>
+            <th>{t('adaptability')}&nbsp;:</th>
             <td>{data.adaptability}</td>
           </tr>
           <tr>
-            <th>生存性:</th>
+            <th>{t('survivability')}&nbsp;:</th>
             <td>{data.survivability}</td>
           </tr>
           <tr>
-            <th>繁殖性:</th>
+            <th>{t('reproductive')}&nbsp;:</th>
             <td>{data.reproduction}</td>
           </tr>
           <tr>
-            <th>外部环境:</th>
+            <th>{t('externalEnvironment')}&nbsp;:</th>
             <td>{data.env}</td>
           </tr>
           <tr>
-            <th>存活日:</th>
+            <th>{t('survivalDay')}&nbsp;:</th>
             <td>{data.day}</td>
           </tr>
           <tr>
-            <th>总体得分:</th>
+            <th>{t('overallScore')}</th>
             <td>{data.totalScore}</td>
           </tr>
           <tr>
-            <th>细胞创造者:</th>
+            <th>{t('cellCreator')}</th>
             <td>{data.creator}</td>
           </tr>
           <tr>
-            <th>所属族群:</th>
+            <th>{t('ethnicGroup')}</th>
             <td>{data.owner}</td>
           </tr>
         </tbody>

@@ -1,3 +1,4 @@
+import { t } from '../../../../i18n';
 import type { IGameData } from '../../../../store/gameSlice';
 import { success } from '../../../Dialog';
 import { endGame, getInitGameData } from './endGame';
@@ -25,11 +26,11 @@ export async function reproduce(gameData: IGameData) {
     const day = gameData.day + 1;
     const env = Math.floor(day / 10);
     success(
-      '繁殖成功',
+      t('successfullReproduction'),
       <ul className={styles.result}>
-        <li>生命周期 -1</li>
-        <li>细胞数 +{cellChange}</li>
-        <li>存活日 +1</li>
+        <li>{t('lifeCycle')}&nbsp; -1</li>
+        <li>{t('cellCount')}&nbsp; +{cellChange}</li>
+        <li>{t('survivalDay')}&nbsp; +1</li>
       </ul>,
     );
     resolve({ ...gameData, lifeCycle, cell, day, env });
