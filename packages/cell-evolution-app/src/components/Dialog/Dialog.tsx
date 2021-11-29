@@ -41,15 +41,16 @@ export function Dialog(props: DialogProps) {
     className,
     children,
     onOk,
-    okText = t('ok'),
+    okText = t('ok') || '',
     onCancel,
     unMount = noop,
   } = props;
 
+  const onCancelText = t('cancel')
   const computedTitle = useMemo(() => {
     if (title) return title;
-    if (type === DialogType.SUCCESS) return `操作成功`;
-    if (type === DialogType.ERROR) return `操作失败`;
+    if (type === DialogType.SUCCESS) return t('SuccessfulOperation');
+    if (type === DialogType.ERROR) return t('OperationFailed');
     return '';
   }, [title, type]);
 
@@ -96,7 +97,7 @@ export function Dialog(props: DialogProps) {
             {okText}
           </Button>
         )}
-        {onCancel && <Button onClick={onDidCancel}>{t('cancel')}</Button>}
+        {onCancel && <Button onClick={onDidCancel}>{onCancelText}</Button>}
       </div>
     </Modal>
   );

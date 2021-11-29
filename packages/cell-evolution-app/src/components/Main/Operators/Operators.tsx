@@ -79,7 +79,7 @@ export function Operators(props: OperatorsProps) {
           /** ignore */
         });
     });
-  }, [dispatch, gameData]);
+  }, [dispatch, gameData, t]);
 
   const inheritOperator = useCallback(async () => {
     try {

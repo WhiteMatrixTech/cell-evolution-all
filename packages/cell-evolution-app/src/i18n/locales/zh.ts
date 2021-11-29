@@ -73,12 +73,16 @@ export default {
 
   geneticFailureContent: '只能在存活日为1的时候遗传',
   afterApoptosis: '凋亡后将会直接结束游戏，是否确定凋亡?',
-  fusionDNA: '融合DNA中…',
+  fusionDNA: '融合DNA中...',
   fusionDNASuccess: '融合DNA成功',
-  fusedCellID: '融合的细胞ID为',
-  enterTheWordID: '输入想要读取世界的ID',
+  fusedCellID: '融合的细胞ID为 ',
+  uploadFailure: '上传失败',
+  whyFusedCellFailure1: '未获取到钱包信息',
+  whyFusedCellFailure2: '请将metamask的chainId切换为 ',
+  whyFusedCellFailure3: '钱包异常',
+  enterTheWordID: '输入想要读取世界的ID ',
   worldID: '世界ID',
-  enterCellId: '输入想要读取细胞的ID',
+  enterCellId: '输入想要读取细胞的ID ',
   cellId: '细胞ID',
   worldInformation: '读取世界信息成功',
   number: '编号',
@@ -123,5 +127,7 @@ export default {
   weakEnvironmentalResistance: '弱环境抵抗',
   superbAdaptation: '超强适应',
   superSurvival: '超强生存',
-  superbBreeding: '超强繁殖'
+  superbBreeding: '超强繁殖',
+  SuccessfulOperation: '操作成功',
+  OperationFailed: '操作失败'
 }

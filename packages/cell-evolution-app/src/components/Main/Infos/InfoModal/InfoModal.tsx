@@ -18,6 +18,7 @@ const customStyles: Modal.Styles = {
 
 export function InfoModal(props: InfoModalProps) {
   const { className, modalIsOpen, closeModal } = props;
+  const okText = t('ok');
 
   return (
     <Modal
@@ -46,7 +47,7 @@ export function InfoModal(props: InfoModalProps) {
 
       <div className={styles.footer}>
         <Button type="primary" onClick={closeModal}>
-          {t('ok')}
+          {okText}
         </Button>
       </div>
     </Modal>

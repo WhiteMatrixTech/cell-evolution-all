@@ -4,13 +4,14 @@ import { BigNumber } from 'ethers';
 import { confirmDialog, error, success } from '../../../Dialog/Dialog';
 import { GameReport } from './GameReport';
 import { loading } from '../../../Loading/Loading';
+import { t } from '../../../../i18n'
 
 export async function endGame(gameData: IGameData) {
   return new Promise((resolve, reject) => {
     confirmDialog(
       <GameReport data={gameData} />,
       () => {
-        const close = loading(`融合DNA中...`);
+        const close = loading(t('fusionDNA'));
         doMergeDna(gameData)
           .then(() => {
             resolve(getInitGameData());
@@ -28,19 +29,22 @@ export async function endGame(gameData: IGameData) {
 export async function doMergeDna(gameData: IGameData) {
   await etherClient.loadProvider();
   const walletInfo = await etherClient.getWalletInfo();
+  const mergeDnaFailure1 = t('whyFusedCellFailure1');
+  const mergeDnaFailure2 = t('whyFusedCellFailure2');
+  const mergeDnaFailure3 = t('whyFusedCellFailure3');
   if (!walletInfo) {
-    error('上传失败', '未获取到钱包信息');
-    throw new Error('未获取到钱包信息');
+    error(t('uploadFailure'), mergeDnaFailure1);
+    throw new Error(mergeDnaFailure1);
   }
   if (walletInfo.chainId !== contractChainId) {
-    error('上传失败', `请将metamask的chainId切换为${contractChainId}`);
-    throw new Error(`请将metamask的chainId切换为${contractChainId}`);
+    error(t('uploadFailure'), `${mergeDnaFailure2}${contractChainId}`);
+    throw new Error(`${mergeDnaFailure2}${contractChainId}`);
   }
   etherClient.connectCellEvolutionContract();
   etherClient.connectSigner();
   if (!etherClient.client) {
-    error('上传失败', `钱包异常`);
-    throw new Error(`钱包异常`);
+    error(t('uploadFailure'), mergeDnaFailure3);
+    throw new Error(mergeDnaFailure3);
   }
   const totalCell = await etherClient.client.totalcell();
   const nextid = totalCell.add(1);
@@ -57,7 +61,7 @@ export async function doMergeDna(gameData: IGameData) {
     {},
   );
 
-  success(`融合DNA成功`, `融合的细胞ID为${nextid.toString()}`);
+  success(t('fusionDNASuccess'), `${t('fusedCellID')}${nextid.toString()}`);
   return getInitGameData();
 }
 

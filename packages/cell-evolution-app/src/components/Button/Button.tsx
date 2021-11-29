@@ -1,12 +1,12 @@
 import cn from 'classnames';
-import { TFunctionResult } from 'i18next';
+
 
 import styles from './Button.less';
 
 interface ButtonProps extends React.AnchorHTMLAttributes<HTMLAnchorElement> {
   className?: string;
   type?: string;
-  children: React.ReactChild | React.ReactChildren | TFunctionResult;
+  children: React.ReactChild | React.ReactChildren;
 }
 
 export function Button(props: ButtonProps) {

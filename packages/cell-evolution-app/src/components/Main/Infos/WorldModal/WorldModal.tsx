@@ -27,8 +27,8 @@ const customStyles: Modal.Styles = {
 
 export function WorldModal(props: WorldModalProps) {
   const { className, modalIsOpen, closeModal } = props;
-  // const { t } = useTranslation();
-
+  const okText = t('ok');
+  const cancelText = t('cancel')
   const [worldDetailIsOpen, setWorldDetailIsOpen] = useState(false);
   const [cellsList, setCellsList] = useState<ICellData[]>([]);
 
@@ -90,9 +90,9 @@ export function WorldModal(props: WorldModalProps) {
         </div>
         <div className={styles.footer}>
           <Button type="primary" onClick={openDetailModal}>
-            {t('ok')}
+            {okText}
           </Button>
-          <Button onClick={closeWorldModel}>{t('cancel')}</Button>
+          <Button onClick={closeWorldModel}>{cancelText}</Button>
         </div>
       </Modal>
 
@@ -109,7 +109,7 @@ export function WorldModal(props: WorldModalProps) {
           </div>
           <div className={styles.footer}>
             <Button type="primary" onClick={closeWorldDetailModal}>
-              {t('ok')}
+              {okText}
             </Button>
           </div>
         </div>

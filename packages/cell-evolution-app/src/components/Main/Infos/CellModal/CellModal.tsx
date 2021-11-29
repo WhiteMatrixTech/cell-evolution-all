@@ -26,7 +26,8 @@ const customStyles: Modal.Styles = {
 
 export function CellModal(props: CellModalProps) {
   const { className, modalIsOpen, closeModal } = props;
-  // const { t } = useTranslation();
+  const okText = t('ok');
+  const cancelText = t('cancel')
   const [cellId, setCellId] = useState('');
   const openDetailModal = useCallback(() => {
     const close = loading(t('loading3', { id: cellId }));
@@ -68,9 +69,9 @@ export function CellModal(props: CellModalProps) {
         </div>
         <div className={styles.footer}>
           <Button type="primary" onClick={openDetailModal}>
-            {t('ok')}
+            {okText}
           </Button>
-          <Button onClick={closeCellModel}>{t('cancel')}</Button>
+          <Button onClick={closeCellModel}>{cancelText}</Button>
         </div>
       </Modal>
     </>

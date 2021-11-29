@@ -17,7 +17,6 @@ export function ChainCheck(props: ChainCheckProps) {
   const { className } = props;
   const { t, i18n } = useTranslation();
 
-  console.log('language', t(i18n.language))
   const [loaded, setLoaded] = useState(false);
   const [walletInfo, setWalletInfo] = useState<IWalletInfo | null>(null);
   useEffect(() => {

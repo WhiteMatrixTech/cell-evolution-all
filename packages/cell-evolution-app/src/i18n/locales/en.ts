@@ -73,7 +73,11 @@ export default {
   afterApoptosis: 'After apoptosis, the game will end directly. Is apoptosis confirmed?',
   fusionDNA: 'Fusion DNA...',
   fusionDNASuccess: 'Fusion DNA success',
-  fusedCellID: 'fused cell ID',
+  fusedCellID: 'fused cell ID ',
+  uploadFailure: 'Upload failure',
+  whyFusedCellFailure1: 'Wallet information not obtained',
+  whyFusedCellFailure2: "Please switch the metamask's chainId to",
+  whyFusedCellFailure3: 'Wallet anomalies',
   enterTheWordID: 'Enter the ID of the world you want to read',
   worldID: 'World ID',
   enterCellId: 'Enter the ID of the cell you want to read',
@@ -121,5 +125,7 @@ export default {
   weakEnvironmentalResistance: 'weak environmental resistance',
   superbAdaptation: 'superb adaptation',
   superSurvival: 'super survival',
-  superbBreeding: 'superb breeding'
+  superbBreeding: 'superb breeding',
+  SuccessfulOperation: 'Successful operation',
+  OperationFailed: 'Operation failed'
 }

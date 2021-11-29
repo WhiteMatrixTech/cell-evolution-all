@@ -176,3 +176,10 @@ load
 
 info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
 info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
+$ /home/feibowei/Workspace/myProject/cell-evolution/node_modules/.bin/env-cmd -f ./envs/.env.eth.rinkeby yarn run hardhat cellEvolution:deploy --wait-num 1 --network rinkeby
+$ /home/feibowei/Workspace/myProject/cell-evolution/node_modules/.bin/hardhat cellEvolution:deploy --wait-num 1 --network rinkeby
+load
+{"level":30,"time":1638151229870,"pid":13282,"hostname":"feibowei-hp","msg":"deploy CellEvolutionNewWorld"}
+
+info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
+info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
