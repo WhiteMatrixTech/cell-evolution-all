@@ -18524,10 +18524,10 @@ thread-stream@^0.11.0:
   resolved "https://registry.yarnpkg.com/thread-stream/-/thread-stream-0.11.0.tgz#375226f1488e11611f7d65fe3d0c2586a05da91e"
   integrity sha512-uzfig6tGx9SpdZSkkp++gLQnd7S7RDOQkZM8OiURY4E2ZsnanrAHQKc8z9lOlAqO4KBHh+KXU8+oZUOhFG9zbQ==
 
-three@0.89.0:
-  version "0.89.0"
-  resolved "https://registry.yarnpkg.com/three/-/three-0.89.0.tgz#4442d819a6168871b8d2cb37ad12a24310c170f5"
-  integrity sha1-RELYGaYWiHG40ss3rRKiQxDBcPU=
+three@0.137.0:
+  version "0.137.0"
+  resolved "https://registry.yarnpkg.com/three/-/three-0.137.0.tgz#0ebd6ba66637a332c31f234bcdd35aeec071a6e3"
+  integrity sha512-rzSDhia6cU35UCy6y+zEEws6vSgytfHqFMSaBvUcySgzwvDO6vETyswtSNi/+aVqJw8WLMwyT1mlQQ1T/dxxOA==
 
 throat@^5.0.0:
   version "5.0.0"
