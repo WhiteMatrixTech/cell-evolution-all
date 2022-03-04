@@ -4,8 +4,7 @@ import { useEffect } from 'react';
 import type { IWalletInfo } from '../../utils/etherClient';
 import { contractChainId, contractChainName } from '../../utils/etherClient';
 import { etherClient } from '../../utils/etherClient';
-import { switchLanguage, useTranslation } from '../../i18n'
-
+import { switchLanguage, useTranslation } from '../../i18n';
 
 import styles from './ChainCheck.less';
 
@@ -40,8 +39,18 @@ export function ChainCheck(props: ChainCheckProps) {
   return (
     <div className={cn(styles.ChainCheck, className)}>
       <div className={styles.language}>
-        <div className={cn({ [styles.selected]: t(i18n.language) === '中文' })} onClick={() => switchLanguage('zh')}>{t('zh')}</div>
-        <div className={cn({ [styles.selected]: t(i18n.language) === 'en-US' })} onClick={() => switchLanguage('en-US')}>{t('en')}</div>
+        <div
+          className={cn({ [styles.selected]: t(i18n.language) === '中文' })}
+          onClick={() => switchLanguage('zh')}
+        >
+          {t('zh')}
+        </div>
+        <div
+          className={cn({ [styles.selected]: t(i18n.language) === 'en-US' })}
+          onClick={() => switchLanguage('en-US')}
+        >
+          {t('en')}
+        </div>
       </div>
       {loaded && (
         <>

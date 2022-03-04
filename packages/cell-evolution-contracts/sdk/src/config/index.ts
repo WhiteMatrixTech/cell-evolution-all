@@ -10,9 +10,7 @@ export interface Deployment {
 
 export enum Network {
   localhost = 'localhost',
-  bscTest = 'bscTest',
-  bscMain = 'bscMain',
-  rinkeby = 'rinkeby'
+  confluxEspace = 'confluxEspace'
 }
 
 export interface CellEvolutionDeployment {

@@ -1,21 +1,24 @@
 {
   "name": "@white-matrix/cellevolution-sdk",
   "version": "0.0.2-a",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
   "author": "33357",
   "license": "MIT",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
-    "prebuild": "cd .. && yarn && yarn run hardhat compile && cp ./deployment-artifacts/deployment.json ./sdk/src/config/ && cd sdk",
     "build": "yarn prebuild && yarn tsc && cp ./src/typechain ./dist/ -r",
+    "format": "prettier --check \"**/*.{ts,js}\"",
+    "format:fix": "prettier --write \"**/*.{ts,js}\"",
+    "lint": "eslint \"**/*.{js,ts}\"",
+    "lint:fix": "eslint --fix \"**/*.{js,ts}\"",
+    "prebuild": "cd .. && cp ./deployment-artifacts/deployment.json ./sdk/src/config/ && cd sdk",
     "prepare": "yarn build",
     "prepublish": "yarn build",
     "test": "mocha",
-    "test:cov": "nyc mocha",
-    "lint": "eslint \"**/*.{js,ts}\"",
-    "lint:fix": "eslint --fix \"**/*.{js,ts}\"",
-    "format": "prettier --check \"**/*.{ts,js}\"",
-    "format:fix": "prettier --write \"**/*.{ts,js}\""
+    "test:cov": "nyc mocha"
+  },
+  "dependencies": {
+    "ethers": "^5.2.0"
   },
   "devDependencies": {
     "@types/mocha": "^8.2.2",
@@ -29,9 +32,6 @@
     "nyc": "^15.1.0",
     "ts-node": "^10.0.0",
     "typescript": "^4.3.2"
-  },
-  "dependencies": {
-    "ethers": "^5.2.0"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org",

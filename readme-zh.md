@@ -33,6 +33,14 @@ cd cell-evolution-all
 yarn
 ```
 
+## 设置部署账户privatekey
+
+在 `packages/cell-evolution-contracts/.env` 文件中, 填写privateKey
+
+```
+PRIVATE_KEY=XXX
+```
+
 ## 💻 编译合约
 ```
 yarn compile:contract

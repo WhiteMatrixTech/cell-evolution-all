@@ -7,7 +7,7 @@ import type { Web3Provider } from '@ethersproject/providers';
 import detectEthereumProvider from '@metamask/detect-provider';
 import { Emitter } from '@white-matrix/event-emitter';
 
-const CELL_EVOLUTION_CONTRACT_ADDRESS = DeploymentInfo[Network.rinkeby].CellEvolution.address;
+const CELL_EVOLUTION_CONTRACT_ADDRESS = DeploymentInfo[Network.confluxEspace].CellEvolution.address;
 
 export interface IWalletInfo {
   address: string;
@@ -15,9 +15,9 @@ export interface IWalletInfo {
   chainId: number;
   balance: string;
 }
-// rinkeby id
-export const contractChainId = 4;
-export const contractChainName = 'rinkeby';
+// conflux eSpace id
+export const contractChainId = 71;
+export const contractChainName = 'confluxEspace';
 
 class EtherClient {
   cellEvolutionContractAddress: string;

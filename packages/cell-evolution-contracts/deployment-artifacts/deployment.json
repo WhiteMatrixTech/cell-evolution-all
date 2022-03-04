@@ -1,15 +1,8 @@
 {
-  "localhost": {
-    "operator": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+  "confluxEspace": {
+    "operator": "0x537720A1Df49E88ab026678c734CDA0Fc5c9b4Ef",
     "CellEvolution": {
-      "address": "0x5FbDB2315678afecb367f032d93F642f64180aa3",
-      "impl": "CellEvolutionNewWorld"
-    }
-  },
-  "rinkeby": {
-    "operator": "0x65a227f7F8f929cBB25843F4d9d7AF9a07f8FACE",
-    "CellEvolution": {
-      "address": "0x4bDB1565D523429f05D75C2D630175F9349f141c",
+      "address": "0xEd3951F62ff18009f38a5Dc192f6d38D67656F94",
       "impl": "CellEvolutionNewWorld"
     }
   }

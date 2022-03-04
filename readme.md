@@ -33,6 +33,14 @@ cd cell-evolution-all
 yarn
 ```
 
+## set the privatekey of deploy account
+
+open file `packages/cell-evolution-contracts/.env` , set the privateKey
+
+```
+PRIVATE_KEY=XXX
+```
+
 ## 💻 Compile contract
 ```
 yarn compile:contract
