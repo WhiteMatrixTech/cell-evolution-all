@@ -27,6 +27,7 @@ git clone https://github.com/WhiteMatrixTech/cell-evolution-all.git
 
 ```bash
 cd cell-evolution-all
+git checkout conflux
 ```
 
 ```bash
