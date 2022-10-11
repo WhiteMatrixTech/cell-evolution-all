@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://chainide.com">
-    <img width="200" src="https://chainide-static-resource.s3.us-west-2.amazonaws.com/cell-evolution-logo.svg">
+    <img width="200" src="https://d1hofj2ah5bgy9.cloudfront.net/cell-evolution-logo.svg">
   </a>
 </p>
 
