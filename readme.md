@@ -12,7 +12,7 @@ Cell Evolution is the first decentralized sandbox business strategy game based o
 
 </div>
 
-## ⏬ Install git
+## ⏬ Install Git
 ```
 apk add git
 ```
@@ -27,18 +27,15 @@ git clone https://github.com/WhiteMatrixTech/cell-evolution-all.git
 
 ```bash
 cd cell-evolution-all
-```
-
-```bash
 yarn
 ```
 
-## 💻 Compile contract
+## 💻 Compile Contract
 ```
 yarn compile:contract
 ```
 
-## 💻 Depoly Contract
+## 💻 Deploy Contract
 ```
 yarn deploy:contract
 ```
