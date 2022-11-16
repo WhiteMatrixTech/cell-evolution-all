@@ -12,7 +12,8 @@ Cell Evolution is the first decentralized sandbox business strategy game based o
 
 </div>
 
-## ⏬ Install git
+
+## ⏬ Install Git
 ```
 apk add git
 ```
@@ -34,20 +35,20 @@ git checkout conflux
 yarn
 ```
 
-## set the privatekey of deploy account
+## 🔑 Set the Private Key of Deploy Account
 
-open file `packages/cell-evolution-contracts/.env` , set the privateKey
+open file `packages/cell-evolution-contracts/.env` , set the Private Key
 
 ```
 PRIVATE_KEY=XXX
 ```
 
-## 💻 Compile contract
+## 💻 Compile Contract
 ```
 yarn compile:contract
 ```
 
-## 💻 Depoly Contract
+## 💻 Deploy Contract
 ```
 yarn deploy:contract
 ```
