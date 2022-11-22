@@ -31,8 +31,8 @@ info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this comm
 yarn run v1.22.10
 info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
 yarn run v1.22.10
-$ /home/shen/github/cellerfork-contract/node_modules/.bin/env-cmd -f ./envs/.env.eth.rinkeby yarn run hardhat cellEvolution:deploy --wait-num 1 --network rinkeby
-$ /home/shen/github/cellerfork-contract/node_modules/.bin/hardhat cellEvolution:deploy --wait-num 1 --network rinkeby
+$ /home/shen/github/cellerfork-contract/node_modules/.bin/env-cmd -f ./envs/.env.eth.goerli yarn run hardhat cellEvolution:deploy --wait-num 1 --network goerli
+$ /home/shen/github/cellerfork-contract/node_modules/.bin/hardhat cellEvolution:deploy --wait-num 1 --network goerli
 load
 {"level":30,"time":1628219995277,"pid":841842,"hostname":"ubuntu","msg":"read:./logs/cellEvolution:deploy.lock"}
 {"level":30,"time":1628219995283,"pid":841842,"hostname":"ubuntu","msg":"deploy CellEvolutionNewWorld"}
@@ -40,8 +40,8 @@ load
 {"level":30,"time":1628219996602,"pid":841842,"hostname":"ubuntu","msg":"RiverBoxRandom deployed at 0x5FbDB2315678afecb367f032d93F642f64180aa3"}
 Done in 5.09s.
 yarn run v1.22.10
-$ /home/shen/github/cellerfork-contract/node_modules/.bin/env-cmd -f ./envs/.env.eth.rinkeby yarn run hardhat cellEvolution:deploy --wait-num 1 --network rinkeby
-$ /home/shen/github/cellerfork-contract/node_modules/.bin/hardhat cellEvolution:deploy --wait-num 1 --network rinkeby
+$ /home/shen/github/cellerfork-contract/node_modules/.bin/env-cmd -f ./envs/.env.eth.goerli yarn run hardhat cellEvolution:deploy --wait-num 1 --network goerli
+$ /home/shen/github/cellerfork-contract/node_modules/.bin/hardhat cellEvolution:deploy --wait-num 1 --network goerli
 load
 {"level":30,"time":1628220067990,"pid":842017,"hostname":"ubuntu","msg":"deploy CellEvolutionNewWorld"}
 {"level":30,"time":1628220069242,"pid":842017,"hostname":"ubuntu","msg":"execute operation transaction:0, deploy CellEvolution, try 1"}
@@ -50,8 +50,8 @@ load
 {"level":30,"time":1628220095946,"pid":842017,"hostname":"ubuntu","msg":"RiverBoxRandom deployed at 0xc17d6F10c8258F33213668601E6eee5e813DD3d9"}
 Done in 31.57s.
 yarn run v1.22.10
-$ /home/shen/github/cellerfork-contract/node_modules/.bin/env-cmd -f ./envs/.env.eth.rinkeby yarn run hardhat cellEvolution:deploy --wait-num 1 --network rinkeby
-$ /home/shen/github/cellerfork-contract/node_modules/.bin/hardhat cellEvolution:deploy --wait-num 1 --network rinkeby
+$ /home/shen/github/cellerfork-contract/node_modules/.bin/env-cmd -f ./envs/.env.eth.goerli yarn run hardhat cellEvolution:deploy --wait-num 1 --network goerli
+$ /home/shen/github/cellerfork-contract/node_modules/.bin/hardhat cellEvolution:deploy --wait-num 1 --network goerli
 load
 {"level":30,"time":1628220303834,"pid":842554,"hostname":"ubuntu","msg":"deploy CellEvolutionNewWorld"}
 {"level":30,"time":1628220305094,"pid":842554,"hostname":"ubuntu","msg":"execute operation transaction:0, deploy CellEvolution, try 1"}
@@ -71,8 +71,8 @@ load
 
 info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
 yarn run v1.22.10
-$ /home/shen/github/cellerfork-contract/node_modules/.bin/env-cmd -f ./envs/.env.eth.rinkeby yarn run hardhat cellEvolution:deploy --wait-num 1 --network rinkeby
-$ /home/shen/github/cellerfork-contract/node_modules/.bin/hardhat cellEvolution:deploy --wait-num 1 --network rinkeby
+$ /home/shen/github/cellerfork-contract/node_modules/.bin/env-cmd -f ./envs/.env.eth.goerli yarn run hardhat cellEvolution:deploy --wait-num 1 --network goerli
+$ /home/shen/github/cellerfork-contract/node_modules/.bin/hardhat cellEvolution:deploy --wait-num 1 --network goerli
 load
 {"level":30,"time":1628560470418,"pid":959710,"hostname":"ubuntu","msg":"deploy CellEvolutionNewWorld"}
 {"level":30,"time":1628560471668,"pid":959710,"hostname":"ubuntu","msg":"execute operation transaction:0, deploy CellEvolution, try 1"}
@@ -86,8 +86,8 @@ load
 {"level":30,"time":1628560492419,"pid":959710,"hostname":"ubuntu","msg":"RiverBoxRandom deployed at 0x9d62191CbDf015d5f7744Feb56d2f5Fb692706c4"}
 Done in 25.47s.
 yarn run v1.22.10
-$ /home/shen/github/cellerfork-contract/node_modules/.bin/env-cmd -f ./envs/.env.eth.rinkeby yarn run hardhat cellEvolution:deploy --wait-num 1 --network rinkeby
-$ /home/shen/github/cellerfork-contract/node_modules/.bin/hardhat cellEvolution:deploy --wait-num 1 --network rinkeby
+$ /home/shen/github/cellerfork-contract/node_modules/.bin/env-cmd -f ./envs/.env.eth.goerli yarn run hardhat cellEvolution:deploy --wait-num 1 --network goerli
+$ /home/shen/github/cellerfork-contract/node_modules/.bin/hardhat cellEvolution:deploy --wait-num 1 --network goerli
 load
 {"level":30,"time":1628645730944,"pid":1002522,"hostname":"ubuntu","msg":"deploy CellEvolutionNewWorld"}
 {"level":30,"time":1628645732178,"pid":1002522,"hostname":"ubuntu","msg":"execute operation transaction:0, deploy CellEvolution, try 1"}
@@ -101,8 +101,8 @@ load
 {"level":30,"time":1628645746598,"pid":1002522,"hostname":"ubuntu","msg":"RiverBoxRandom deployed at 0x47387B396b8c1651b44f8cA71682D3f0aAdD9139"}
 Done in 19.02s.
 yarn run v1.22.10
-$ /home/shen/github/cellerfork-contract/node_modules/.bin/env-cmd -f ./envs/.env.eth.rinkeby yarn run hardhat cellEvolution:deploy --wait-num 1 --network rinkeby
-$ /home/shen/github/cellerfork-contract/node_modules/.bin/hardhat cellEvolution:deploy --wait-num 1 --network rinkeby
+$ /home/shen/github/cellerfork-contract/node_modules/.bin/env-cmd -f ./envs/.env.eth.goerli yarn run hardhat cellEvolution:deploy --wait-num 1 --network goerli
+$ /home/shen/github/cellerfork-contract/node_modules/.bin/hardhat cellEvolution:deploy --wait-num 1 --network goerli
 load
 {"level":30,"time":1628735664700,"pid":1064363,"hostname":"ubuntu","msg":"deploy CellEvolutionNewWorld"}
 {"level":30,"time":1628735666043,"pid":1064363,"hostname":"ubuntu","msg":"execute operation transaction:0, deploy CellEvolution, try 1"}
@@ -116,8 +116,8 @@ load
 {"level":30,"time":1628735692792,"pid":1064363,"hostname":"ubuntu","msg":"RiverBoxRandom deployed at 0x7936C6A16B28900E31699A79D814767b7A99d25a"}
 Done in 32.16s.
 yarn run v1.22.10
-$ /home/shen/github/cellerfork-contract/node_modules/.bin/env-cmd -f ./envs/.env.eth.rinkeby yarn run hardhat cellEvolution:deploy --wait-num 1 --network rinkeby
-$ /home/shen/github/cellerfork-contract/node_modules/.bin/hardhat cellEvolution:deploy --wait-num 1 --network rinkeby
+$ /home/shen/github/cellerfork-contract/node_modules/.bin/env-cmd -f ./envs/.env.eth.goerli yarn run hardhat cellEvolution:deploy --wait-num 1 --network goerli
+$ /home/shen/github/cellerfork-contract/node_modules/.bin/hardhat cellEvolution:deploy --wait-num 1 --network goerli
 load
 {"level":30,"time":1628750128476,"pid":1092427,"hostname":"ubuntu","msg":"deploy CellEvolutionNewWorld"}
 {"level":30,"time":1628750129720,"pid":1092427,"hostname":"ubuntu","msg":"execute operation transaction:0, deploy CellEvolution, try 1"}
@@ -130,8 +130,8 @@ load
 └─────────┴────────────────────────┴─────────┴──────────┴──────────────────────────────┘
 {"level":30,"time":1628750148191,"pid":1092427,"hostname":"ubuntu","msg":"RiverBoxRandom deployed at 0xb34135Ec760891f5F17bECB223144b3618A95d7f"}
 Done in 23.65s.
-$ /home/shen/github/cell-evolution-all/node_modules/.bin/env-cmd -f ./envs/.env.eth.rinkeby yarn run hardhat cellEvolution:deploy --wait-num 1 --network rinkeby
-$ /home/shen/github/cell-evolution-all/node_modules/.bin/hardhat cellEvolution:deploy --wait-num 1 --network rinkeby
+$ /home/shen/github/cell-evolution-all/node_modules/.bin/env-cmd -f ./envs/.env.eth.goerli yarn run hardhat cellEvolution:deploy --wait-num 1 --network goerli
+$ /home/shen/github/cell-evolution-all/node_modules/.bin/hardhat cellEvolution:deploy --wait-num 1 --network goerli
 load
 {"level":30,"time":1629959412181,"pid":365570,"hostname":"ubuntu","msg":"deploy CellEvolutionNewWorld"}
 {"level":30,"time":1629959413271,"pid":365570,"hostname":"ubuntu","msg":"execute operation transaction:0, deploy CellEvolution, try 1"}
@@ -140,11 +140,11 @@ load
 
 info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
 info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
-$ /home/shen/github/cell-evolution-all/node_modules/.bin/hardhat compile yarn run env-cmd -f ./envs/.env.eth.rinkeby yarn run hardhat cellEvolution:deploy --wait-num 1 --network rinkeby
+$ /home/shen/github/cell-evolution-all/node_modules/.bin/hardhat compile yarn run env-cmd -f ./envs/.env.eth.goerli yarn run hardhat cellEvolution:deploy --wait-num 1 --network goerli
 
 info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
-$ /home/shen/github/cell-evolution-all/node_modules/.bin/env-cmd -f ./envs/.env.eth.rinkeby yarn run hardhat cellEvolution:deploy --wait-num 1 --network rinkeby
-$ /home/shen/github/cell-evolution-all/node_modules/.bin/hardhat cellEvolution:deploy --wait-num 1 --network rinkeby
+$ /home/shen/github/cell-evolution-all/node_modules/.bin/env-cmd -f ./envs/.env.eth.goerli yarn run hardhat cellEvolution:deploy --wait-num 1 --network goerli
+$ /home/shen/github/cell-evolution-all/node_modules/.bin/hardhat cellEvolution:deploy --wait-num 1 --network goerli
 load
 {"level":30,"time":1629959476612,"pid":366352,"hostname":"ubuntu","msg":"deploy CellEvolutionNewWorld"}
 {"level":30,"time":1629959477615,"pid":366352,"hostname":"ubuntu","msg":"execute operation transaction:0, deploy CellEvolution, try 1"}
@@ -156,8 +156,8 @@ load
 │    1    │       'totalGas'       │ 3664946 │ '1 gwei' │ '0.00366494603664946 ether' │
 └─────────┴────────────────────────┴─────────┴──────────┴─────────────────────────────┘
 {"level":30,"time":1629959545085,"pid":366352,"hostname":"ubuntu","msg":"cellEvolution deployed at 0x5f3a2Ebd886A901A41bf080bf6FAdbb2a6081A8d"}
-$ /home/shen/github/cell-evolution-all/node_modules/.bin/env-cmd -f ./envs/.env.eth.rinkeby yarn run hardhat cellEvolution:deploy --wait-num 1 --network rinkeby
-$ /home/shen/github/cell-evolution-all/node_modules/.bin/hardhat cellEvolution:deploy --wait-num 1 --network rinkeby
+$ /home/shen/github/cell-evolution-all/node_modules/.bin/env-cmd -f ./envs/.env.eth.goerli yarn run hardhat cellEvolution:deploy --wait-num 1 --network goerli
+$ /home/shen/github/cell-evolution-all/node_modules/.bin/hardhat cellEvolution:deploy --wait-num 1 --network goerli
 load
 {"level":30,"time":1629959665492,"pid":367753,"hostname":"ubuntu","msg":"deploy CellEvolutionNewWorld"}
 {"level":30,"time":1629959666577,"pid":367753,"hostname":"ubuntu","msg":"execute operation transaction:0, deploy CellEvolution, try 1"}
@@ -169,17 +169,22 @@ load
 │    1    │       'totalGas'       │ 3664946 │ '1 gwei' │ '0.003664946040314406 ether' │
 └─────────┴────────────────────────┴─────────┴──────────┴──────────────────────────────┘
 {"level":30,"time":1629959689668,"pid":367753,"hostname":"ubuntu","msg":"cellEvolution deployed at 0x4bDB1565D523429f05D75C2D630175F9349f141c"}
-$ /home/feibowei/Workspace/cell-evolution-all/node_modules/.bin/env-cmd -f ./envs/.env.eth.rinkeby yarn run hardhat cellEvolution:deploy --wait-num 1 --network rinkeby
-$ /home/feibowei/Workspace/cell-evolution-all/node_modules/.bin/hardhat cellEvolution:deploy --wait-num 1 --network rinkeby
+$ /home/feibowei/Workspace/cell-evolution-all/node_modules/.bin/env-cmd -f ./envs/.env.eth.goerli yarn run hardhat cellEvolution:deploy --wait-num 1 --network goerli
+$ /home/feibowei/Workspace/cell-evolution-all/node_modules/.bin/hardhat cellEvolution:deploy --wait-num 1 --network goerli
 load
 {"level":30,"time":1637227491773,"pid":362991,"hostname":"feibowei-hp","msg":"deploy CellEvolutionNewWorld"}
 
 info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
 info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
-$ /home/feibowei/Workspace/myProject/cell-evolution/node_modules/.bin/env-cmd -f ./envs/.env.eth.rinkeby yarn run hardhat cellEvolution:deploy --wait-num 1 --network rinkeby
-$ /home/feibowei/Workspace/myProject/cell-evolution/node_modules/.bin/hardhat cellEvolution:deploy --wait-num 1 --network rinkeby
+$ /home/feibowei/Workspace/myProject/cell-evolution/node_modules/.bin/env-cmd -f ./envs/.env.eth.goerli yarn run hardhat cellEvolution:deploy --wait-num 1 --network goerli
+$ /home/feibowei/Workspace/myProject/cell-evolution/node_modules/.bin/hardhat cellEvolution:deploy --wait-num 1 --network goerli
 load
 {"level":30,"time":1638151229870,"pid":13282,"hostname":"feibowei-hp","msg":"deploy CellEvolutionNewWorld"}
+
+info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
+info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
+$ C:\caoxm\chunbai\cell-evolution-all\node_modules\.bin\env-cmd -f ./envs/.env.eth.goerli yarn run hardhat cellEvolution:deploy --wait-num 1 --network goerli
+$ C:\caoxm\chunbai\cell-evolution-all\node_modules\.bin\hardhat cellEvolution:deploy --wait-num 1 --network goerli
 
 info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
 info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.

@@ -13,6 +13,7 @@ Cell Evolution is the first decentralized sandbox business strategy game based o
 </div>
 
 ## ⏬ Install Git
+
 ```
 apk add git
 ```
@@ -23,29 +24,38 @@ apk add git
 git clone https://github.com/WhiteMatrixTech/cell-evolution-all.git
 ```
 
-## 📦 Install Dependency
+## Install Dependency
 
 ```bash
 cd cell-evolution-all
 yarn
 ```
 
-## 💻 Compile Contract
+## Compile Contract
+
 ```
 yarn compile:contract
 ```
 
-## 💻 Deploy Contract
+# Set Env
+
+copy `cell-evolution-contracts/envs/.env.eth.goerli` to `cell-evolution-contracts/.env`
+then set PRIVATE_KEY and infula api key
+
+## Deploy Contract
+
 ```
 yarn deploy:contract
 ```
 
-## 💻 Package SDK
+## Package SDK
+
 ```
 yarn build:sdk
 ```
 
-## 🧿 Start the Front-end
+## Start the Front-end
+
 ```
 yarn start:webapp
 ```

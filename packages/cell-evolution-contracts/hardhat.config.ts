@@ -1,14 +1,14 @@
-import { HardhatUserConfig} from "hardhat/config";
-import "@nomiclabs/hardhat-waffle";
-import "hardhat-deploy";
-import "hardhat-deploy-ethers";
+import {HardhatUserConfig} from 'hardhat/config';
+import '@nomiclabs/hardhat-waffle';
+import 'hardhat-deploy';
+import 'hardhat-deploy-ethers';
 import 'hardhat-contract-sizer';
 import '@openzeppelin/hardhat-upgrades';
 import '@nomiclabs/hardhat-etherscan';
 import '@typechain/hardhat';
-import "hardhat-gas-reporter";
+import 'hardhat-gas-reporter';
 import 'solidity-coverage';
-import "./tasks";
+import './tasks';
 import dotenv from 'dotenv';
 
 dotenv.config();
@@ -34,7 +34,7 @@ if (privateKey) {
 
 const config: HardhatUserConfig = {
   solidity: {
-    version: "0.8.4",
+    version: '0.8.4',
     settings: {
       optimizer: {
         enabled: true,
@@ -57,8 +57,8 @@ const config: HardhatUserConfig = {
       timeout: 60000,
       blockGasLimit: 60000000,
     },
-    rinkeby: {
-      url: `https://rinkeby.infura.io/v3/${process.env.RINKEBY_INFURA}`,
+    goerli: {
+      url: `https://goerli.infura.io/v3/${process.env.INFURA_KEY}`,
       accounts,
       timeout: 60000,
     },
@@ -78,7 +78,7 @@ const config: HardhatUserConfig = {
   },
   gasReporter: {
     currency: 'CHF',
-    gasPrice: 1
+    gasPrice: 1,
   },
   typechain: {
     outDir: './sdk/src/typechain',

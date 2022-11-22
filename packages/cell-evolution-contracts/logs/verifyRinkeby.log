@@ -1,6 +1,6 @@
 yarn run v1.22.10
-$ /home/shen/github/cellerfork-contract/node_modules/.bin/env-cmd -f ./envs/.env.eth.rinkeby yarn run hardhat cellEvolution:verify --network rinkeby
-$ /home/shen/github/cellerfork-contract/node_modules/.bin/hardhat cellEvolution:verify --network rinkeby
+$ /home/shen/github/cellerfork-contract/node_modules/.bin/env-cmd -f ./envs/.env.eth.goerli yarn run hardhat cellEvolution:verify --network goerli
+$ /home/shen/github/cellerfork-contract/node_modules/.bin/hardhat cellEvolution:verify --network goerli
 {"level":30,"time":1628737830838,"pid":1068948,"hostname":"ubuntu","msg":"Use deployment information {\"operator\":\"0x65a227f7F8f929cBB25843F4d9d7AF9a07f8FACE\",\"CellEvolution\":{\"address\":\"0x7936C6A16B28900E31699A79D814767b7A99d25a\",\"impl\":\"CellEvolutionNewWorld\"}}"}
 HardhatError: HH303: Unrecognized task verify:verify
     at Environment.run (/home/shen/github/cellerfork-contract/node_modules/hardhat/src/internal/core/runtime-environment.ts:118:13)
@@ -10,8 +10,8 @@ HardhatError: HH303: Unrecognized task verify:verify
     at fulfilled (/home/shen/github/cellerfork-contract/tasks/verify/verify-cellevolution.ts:5:58)
 Done in 3.94s.
 yarn run v1.22.10
-$ /home/shen/github/cellerfork-contract/node_modules/.bin/env-cmd -f ./envs/.env.eth.rinkeby yarn run hardhat cellEvolution:verify --network rinkeby
-$ /home/shen/github/cellerfork-contract/node_modules/.bin/hardhat cellEvolution:verify --network rinkeby
+$ /home/shen/github/cellerfork-contract/node_modules/.bin/env-cmd -f ./envs/.env.eth.goerli yarn run hardhat cellEvolution:verify --network goerli
+$ /home/shen/github/cellerfork-contract/node_modules/.bin/hardhat cellEvolution:verify --network goerli
 {"level":30,"time":1628737889007,"pid":1069294,"hostname":"ubuntu","msg":"Use deployment information {\"operator\":\"0x65a227f7F8f929cBB25843F4d9d7AF9a07f8FACE\",\"CellEvolution\":{\"address\":\"0x7936C6A16B28900E31699A79D814767b7A99d25a\",\"impl\":\"CellEvolutionNewWorld\"}}"}
 NomicLabsHardhatPluginError: Please provide an Etherscan API token via hardhat config.
 E.g.: { [...], etherscan: { apiKey: 'an API key' }, [...] }
@@ -25,8 +25,8 @@ See https://etherscan.io/apis
     at fulfilled (/home/shen/github/cellerfork-contract/tasks/verify/verify-cellevolution.ts:5:58)
 Done in 3.93s.
 yarn run v1.22.10
-$ /home/shen/github/cellerfork-contract/node_modules/.bin/env-cmd -f ./envs/.env.eth.rinkeby yarn run hardhat cellEvolution:verify --network rinkeby
-$ /home/shen/github/cellerfork-contract/node_modules/.bin/hardhat cellEvolution:verify --network rinkeby
+$ /home/shen/github/cellerfork-contract/node_modules/.bin/env-cmd -f ./envs/.env.eth.goerli yarn run hardhat cellEvolution:verify --network goerli
+$ /home/shen/github/cellerfork-contract/node_modules/.bin/hardhat cellEvolution:verify --network goerli
 {"level":30,"time":1628737928971,"pid":1069442,"hostname":"ubuntu","msg":"Use deployment information {\"operator\":\"0x65a227f7F8f929cBB25843F4d9d7AF9a07f8FACE\",\"CellEvolution\":{\"address\":\"0x7936C6A16B28900E31699A79D814767b7A99d25a\",\"impl\":\"CellEvolutionNewWorld\"}}"}
 Nothing to compile
 No need to generate any newer typings.
@@ -58,8 +58,8 @@ but 1 arguments were provided instead.
         at Environment.run (/home/shen/github/cellerfork-contract/node_modules/hardhat/src/internal/core/runtime-environment.ts:129:14)
 Done in 7.07s.
 yarn run v1.22.10
-$ /home/shen/github/cellerfork-contract/node_modules/.bin/env-cmd -f ./envs/.env.eth.rinkeby yarn run hardhat cellEvolution:verify --network rinkeby
-$ /home/shen/github/cellerfork-contract/node_modules/.bin/hardhat cellEvolution:verify --network rinkeby
+$ /home/shen/github/cellerfork-contract/node_modules/.bin/env-cmd -f ./envs/.env.eth.goerli yarn run hardhat cellEvolution:verify --network goerli
+$ /home/shen/github/cellerfork-contract/node_modules/.bin/hardhat cellEvolution:verify --network goerli
 {"level":30,"time":1628737971887,"pid":1069613,"hostname":"ubuntu","msg":"Use deployment information {\"operator\":\"0x65a227f7F8f929cBB25843F4d9d7AF9a07f8FACE\",\"CellEvolution\":{\"address\":\"0x7936C6A16B28900E31699A79D814767b7A99d25a\",\"impl\":\"CellEvolutionNewWorld\"}}"}
 Nothing to compile
 No need to generate any newer typings.
@@ -74,8 +74,8 @@ No need to generate any newer typings.
  ·-------------------------|-------------·
 Compiling 1 file with 0.8.4
 NomicLabsHardhatPluginError: Failed to send contract verification request.
-Endpoint URL: https://api-rinkeby.etherscan.io/api
-Reason: request to https://api-rinkeby.etherscan.io/api failed, reason: connect ECONNREFUSED 74.86.142.55:443
+Endpoint URL: https://api-goerli.etherscan.io/api
+Reason: request to https://api-goerli.etherscan.io/api failed, reason: connect ECONNREFUSED 74.86.142.55:443
     at Object.verifyContract (/home/shen/github/cellerfork-contract/node_modules/@nomiclabs/hardhat-etherscan/src/etherscan/EtherscanService.ts:33:11)
     at processTicksAndRejections (internal/process/task_queues.js:95:5)
     at attemptVerification (/home/shen/github/cellerfork-contract/node_modules/@nomiclabs/hardhat-etherscan/src/index.ts:415:20)
@@ -86,7 +86,7 @@ Reason: request to https://api-rinkeby.etherscan.io/api failed, reason: connect 
     at Environment._runTaskDefinition (/home/shen/github/cellerfork-contract/node_modules/hardhat/src/internal/core/runtime-environment.ts:217:14)
     at Environment.run (/home/shen/github/cellerfork-contract/node_modules/hardhat/src/internal/core/runtime-environment.ts:129:14)
 
-    Caused by: FetchError: request to https://api-rinkeby.etherscan.io/api failed, reason: connect ECONNREFUSED 74.86.142.55:443
+    Caused by: FetchError: request to https://api-goerli.etherscan.io/api failed, reason: connect ECONNREFUSED 74.86.142.55:443
         at ClientRequest.<anonymous> (/home/shen/github/cellerfork-contract/node_modules/node-fetch/lib/index.js:1461:11)
         at ClientRequest.emit (events.js:375:28)
         at ClientRequest.emit (domain.js:470:12)
@@ -98,8 +98,8 @@ Reason: request to https://api-rinkeby.etherscan.io/api failed, reason: connect 
         at processTicksAndRejections (internal/process/task_queues.js:82:21)
 Done in 52.23s.
 yarn run v1.22.10
-$ /home/shen/github/cellerfork-contract/node_modules/.bin/env-cmd -f ./envs/.env.eth.rinkeby yarn run hardhat cellEvolution:verify --network rinkeby
-$ /home/shen/github/cellerfork-contract/node_modules/.bin/hardhat cellEvolution:verify --network rinkeby
+$ /home/shen/github/cellerfork-contract/node_modules/.bin/env-cmd -f ./envs/.env.eth.goerli yarn run hardhat cellEvolution:verify --network goerli
+$ /home/shen/github/cellerfork-contract/node_modules/.bin/hardhat cellEvolution:verify --network goerli
 {"level":30,"time":1628738161864,"pid":1070003,"hostname":"ubuntu","msg":"Use deployment information {\"operator\":\"0x65a227f7F8f929cBB25843F4d9d7AF9a07f8FACE\",\"CellEvolution\":{\"address\":\"0x7936C6A16B28900E31699A79D814767b7A99d25a\",\"impl\":\"CellEvolutionNewWorld\"}}"}
 Nothing to compile
 No need to generate any newer typings.
@@ -114,8 +114,8 @@ No need to generate any newer typings.
  ·-------------------------|-------------·
 Compiling 1 file with 0.8.4
 NomicLabsHardhatPluginError: Failed to send contract verification request.
-Endpoint URL: https://api-rinkeby.etherscan.io/api
-Reason: request to https://api-rinkeby.etherscan.io/api failed, reason: connect ECONNREFUSED 103.200.31.172:443
+Endpoint URL: https://api-goerli.etherscan.io/api
+Reason: request to https://api-goerli.etherscan.io/api failed, reason: connect ECONNREFUSED 103.200.31.172:443
     at Object.verifyContract (/home/shen/github/cellerfork-contract/node_modules/@nomiclabs/hardhat-etherscan/src/etherscan/EtherscanService.ts:33:11)
     at processTicksAndRejections (internal/process/task_queues.js:95:5)
     at attemptVerification (/home/shen/github/cellerfork-contract/node_modules/@nomiclabs/hardhat-etherscan/src/index.ts:415:20)
@@ -126,7 +126,7 @@ Reason: request to https://api-rinkeby.etherscan.io/api failed, reason: connect 
     at Environment._runTaskDefinition (/home/shen/github/cellerfork-contract/node_modules/hardhat/src/internal/core/runtime-environment.ts:217:14)
     at Environment.run (/home/shen/github/cellerfork-contract/node_modules/hardhat/src/internal/core/runtime-environment.ts:129:14)
 
-    Caused by: FetchError: request to https://api-rinkeby.etherscan.io/api failed, reason: connect ECONNREFUSED 103.200.31.172:443
+    Caused by: FetchError: request to https://api-goerli.etherscan.io/api failed, reason: connect ECONNREFUSED 103.200.31.172:443
         at ClientRequest.<anonymous> (/home/shen/github/cellerfork-contract/node_modules/node-fetch/lib/index.js:1461:11)
         at ClientRequest.emit (events.js:375:28)
         at ClientRequest.emit (domain.js:470:12)
@@ -138,8 +138,8 @@ Reason: request to https://api-rinkeby.etherscan.io/api failed, reason: connect 
         at processTicksAndRejections (internal/process/task_queues.js:82:21)
 Done in 50.32s.
 yarn run v1.22.10
-$ /home/shen/github/cellerfork-contract/node_modules/.bin/env-cmd -f ./envs/.env.eth.rinkeby yarn run hardhat cellEvolution:verify --network rinkeby
-$ /home/shen/github/cellerfork-contract/node_modules/.bin/hardhat cellEvolution:verify --network rinkeby
+$ /home/shen/github/cellerfork-contract/node_modules/.bin/env-cmd -f ./envs/.env.eth.goerli yarn run hardhat cellEvolution:verify --network goerli
+$ /home/shen/github/cellerfork-contract/node_modules/.bin/hardhat cellEvolution:verify --network goerli
 {"level":30,"time":1628738650115,"pid":1070815,"hostname":"ubuntu","msg":"Use deployment information {\"operator\":\"0x65a227f7F8f929cBB25843F4d9d7AF9a07f8FACE\",\"CellEvolution\":{\"address\":\"0x7936C6A16B28900E31699A79D814767b7A99d25a\",\"impl\":\"CellEvolutionNewWorld\"}}"}
 Nothing to compile
 No need to generate any newer typings.
@@ -153,8 +153,8 @@ No need to generate any newer typings.
  |  Strings                ·       0.08  │
  ·-------------------------|-------------·
 yarn run v1.22.10
-$ /home/shen/github/cellerfork-contract/node_modules/.bin/env-cmd -f ./envs/.env.eth.rinkeby yarn run hardhat cellEvolution:verify --network rinkeby
-$ /home/shen/github/cellerfork-contract/node_modules/.bin/hardhat cellEvolution:verify --network rinkeby
+$ /home/shen/github/cellerfork-contract/node_modules/.bin/env-cmd -f ./envs/.env.eth.goerli yarn run hardhat cellEvolution:verify --network goerli
+$ /home/shen/github/cellerfork-contract/node_modules/.bin/hardhat cellEvolution:verify --network goerli
 {"level":30,"time":1628739138654,"pid":1071706,"hostname":"ubuntu","msg":"Use deployment information {\"operator\":\"0x65a227f7F8f929cBB25843F4d9d7AF9a07f8FACE\",\"CellEvolution\":{\"address\":\"0x7936C6A16B28900E31699A79D814767b7A99d25a\",\"impl\":\"CellEvolutionNewWorld\"}}"}
 Compiling 4 files with 0.8.4
 Generating typings for: 4 artifacts in dir: ./sdk/src/typechain for target: ethers-v5
@@ -169,8 +169,8 @@ Compilation finished successfully
  ··························|··············
  |  Strings                ·       0.08  │
  ·-------------------------|-------------·
-$ /home/shen/github/cell-evolution-all/node_modules/.bin/env-cmd -f ./envs/.env.eth.rinkeby yarn run hardhat cellEvolution:verify --network rinkeby
-$ /home/shen/github/cell-evolution-all/node_modules/.bin/hardhat cellEvolution:verify --network rinkeby
+$ /home/shen/github/cell-evolution-all/node_modules/.bin/env-cmd -f ./envs/.env.eth.goerli yarn run hardhat cellEvolution:verify --network goerli
+$ /home/shen/github/cell-evolution-all/node_modules/.bin/hardhat cellEvolution:verify --network goerli
 {"level":30,"time":1629960070345,"pid":370434,"hostname":"ubuntu","msg":"Use deployment information {\"operator\":\"0x65a227f7F8f929cBB25843F4d9d7AF9a07f8FACE\",\"CellEvolution\":{\"address\":\"0x4bDB1565D523429f05D75C2D630175F9349f141c\",\"impl\":\"CellEvolutionNewWorld\"}}"}
 Nothing to compile
 No need to generate any newer typings.

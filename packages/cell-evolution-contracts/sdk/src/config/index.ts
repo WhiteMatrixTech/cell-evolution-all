@@ -12,7 +12,7 @@ export enum Network {
   localhost = 'localhost',
   bscTest = 'bscTest',
   bscMain = 'bscMain',
-  rinkeby = 'rinkeby'
+  goerli = 'goerli'
 }
 
 export interface CellEvolutionDeployment {

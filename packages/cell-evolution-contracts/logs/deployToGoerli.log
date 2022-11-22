@@ -1,0 +1,11 @@
+load
+{"level":30,"time":1669105209162,"pid":15364,"hostname":"DESKTOP-5U3ANLI","msg":"deploy CellEvolutionNewWorld"}
+{"level":30,"time":1669105210381,"pid":15364,"hostname":"DESKTOP-5U3ANLI","msg":"execute operation transaction:0, deploy CellEvolution, try 1"}
+{"level":30,"time":1669105252683,"pid":15364,"hostname":"DESKTOP-5U3ANLI","msg":"success transaction:0,deploy CellEvolution"}
+┌─────────┬────────────────────────┬─────────┬───────────┬─────────────────────────────┐
+│ (index) │      functionName      │ gasUsed │ gasPrice  │             fee             │
+├─────────┼────────────────────────┼─────────┼───────────┼─────────────────────────────┤
+│    0    │ 'deploy CellEvolution' │ 3664946 │ '94 gwei' │ '0.34527614466326045 ether' │
+│    1    │       'totalGas'       │ 3664946 │ '94 gwei' │ '0.34527614466326045 ether' │
+└─────────┴────────────────────────┴─────────┴───────────┴─────────────────────────────┘
+{"level":30,"time":1669105252685,"pid":15364,"hostname":"DESKTOP-5U3ANLI","msg":"cellEvolution deployed at 0x0cf3f4016Feb259C59e58e3bB7073791042dD5BA"}

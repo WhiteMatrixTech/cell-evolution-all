@@ -6,10 +6,10 @@
       "impl": "CellEvolutionNewWorld"
     }
   },
-  "rinkeby": {
-    "operator": "0x65a227f7F8f929cBB25843F4d9d7AF9a07f8FACE",
+  "goerli": {
+    "operator": "0x537720A1Df49E88ab026678c734CDA0Fc5c9b4Ef",
     "CellEvolution": {
-      "address": "0x4bDB1565D523429f05D75C2D630175F9349f141c",
+      "address": "0x0cf3f4016Feb259C59e58e3bB7073791042dD5BA",
       "impl": "CellEvolutionNewWorld"
     }
   }
