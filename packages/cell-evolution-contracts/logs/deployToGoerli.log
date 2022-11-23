@@ -9,3 +9,23 @@ load
 │    1    │       'totalGas'       │ 3664946 │ '94 gwei' │ '0.34527614466326045 ether' │
 └─────────┴────────────────────────┴─────────┴───────────┴─────────────────────────────┘
 {"level":30,"time":1669105252685,"pid":15364,"hostname":"DESKTOP-5U3ANLI","msg":"cellEvolution deployed at 0x0cf3f4016Feb259C59e58e3bB7073791042dD5BA"}
+load
+{"level":30,"time":1669183603971,"pid":26420,"hostname":"DESKTOP-IKEJUGF","msg":"deploy CellEvolutionNewWorld"}
+
+load
+{"level":30,"time":1669183631543,"pid":10756,"hostname":"DESKTOP-IKEJUGF","msg":"deploy CellEvolutionNewWorld"}
+
+load
+{"level":30,"time":1669183703002,"pid":26568,"hostname":"DESKTOP-IKEJUGF","msg":"deploy CellEvolutionNewWorld"}
+
+load
+{"level":30,"time":1669183791574,"pid":20044,"hostname":"DESKTOP-IKEJUGF","msg":"deploy CellEvolutionNewWorld"}
+{"level":30,"time":1669183792713,"pid":20044,"hostname":"DESKTOP-IKEJUGF","msg":"execute operation transaction:0, deploy CellEvolution, try 1"}
+{"level":30,"time":1669183817691,"pid":20044,"hostname":"DESKTOP-IKEJUGF","msg":"success transaction:0,deploy CellEvolution"}
+┌─────────┬────────────────────────┬─────────┬──────────┬──────────────────────────────┐
+│ (index) │      functionName      │ gasUsed │ gasPrice │             fee              │
+├─────────┼────────────────────────┼─────────┼──────────┼──────────────────────────────┤
+│    0    │ 'deploy CellEvolution' │ 3664946 │ '2 gwei' │ '0.009882161270322093 ether' │
+│    1    │       'totalGas'       │ 3664946 │ '2 gwei' │ '0.009882161270322093 ether' │
+└─────────┴────────────────────────┴─────────┴──────────┴──────────────────────────────┘
+{"level":30,"time":1669183817737,"pid":20044,"hostname":"DESKTOP-IKEJUGF","msg":"cellEvolution deployed at 0x6Be05aC087309c7EAC99958FF49EFaB7E7942599"}
