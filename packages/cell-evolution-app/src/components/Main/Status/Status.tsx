@@ -12,6 +12,7 @@ import survivabilityIcon from './icons/survivability.svg';
 import lifeCycleIcon from './icons/lifeCycle.svg';
 import { useAppSelector } from '../../../store/hooks';
 import { selectGame } from '../../../store/gameSlice';
+import { useTranslation } from '../../../i18n'
 
 interface StatusProps {
   className?: string;
@@ -19,38 +20,39 @@ interface StatusProps {
 
 export function Status(props: StatusProps) {
   const { className } = props;
+  const { t } = useTranslation()
 
   const gameData = useAppSelector(selectGame);
 
   return (
     <div className={cn(styles.Status, className)}>
       <div className={styles.rowOne}>
-        <StatusItem icon={dayIcon} text="存活日" count={gameData.day} className="day" />
-        <StatusItem icon={cellIcon} text="细胞数" count={gameData.cell} className="cell" />
-        <StatusItem icon={envIcon} text="外部环境" count={gameData.env} className="env" />
+        <StatusItem icon={dayIcon} text={t('survivalDay')} count={gameData.day} className="day" />
+        <StatusItem icon={cellIcon} text={t('cellCount')} count={gameData.cell} className="cell" />
+        <StatusItem icon={envIcon} text={t('externalEnvironment')} count={gameData.env} className="env" />
       </div>
       <div className={styles.rowTwo}>
         <StatusItem
           icon={reproductionIcon}
-          text="繁殖性"
+          text={t('reproductive')}
           count={gameData.reproduction}
           className="reproduction"
         />
         <StatusItem
           icon={adaptabilityIcon}
-          text="适应性"
+          text={t('adaptability')}
           count={gameData.adaptability}
           className="adaptability"
         />
         <StatusItem
           icon={survivabilityIcon}
-          text="生存性"
+          text={t('survivability')}
           count={gameData.survivability}
           className="survivability"
         />
         <StatusItem
           icon={lifeCycleIcon}
-          text="生命周期"
+          text={t('lifeCycle')}
           count={gameData.lifeCycle}
           className="lifeCycle"
         />

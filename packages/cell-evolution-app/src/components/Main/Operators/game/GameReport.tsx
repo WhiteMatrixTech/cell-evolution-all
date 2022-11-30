@@ -1,6 +1,7 @@
 import type { IGameData } from '../../../../store/gameSlice';
 import { getFinalTitle } from './titleResolve';
 import styles from './styles.less';
+import { t } from '../../../../i18n';
 
 interface IGameReportProps {
   data: IGameData;
@@ -10,20 +11,20 @@ export function GameReport({ data: gameData }: IGameReportProps) {
 
   return (
     <div>
-      <h3>游戏结束</h3>
+      <h3>{t('gameOver')}</h3>
       <br />
       <ul className={styles.result}>
-        <li>细胞数: {gameData.cell}</li>
-        <li>适应性: {gameData.adaptability}</li>
-        <li>生存性: {gameData.survivability}</li>
-        <li>繁殖性: {gameData.reproduction}</li>
-        <li>外部环境: {gameData.env}</li>
-        <li>存活日: {gameData.day}</li>
-        <li>总体得分: {totalScore}</li>
-        <li>最终评价: {getFinalTitle(gameData)}</li>
+        <li>{t('cellCount')}: {gameData.cell}</li>
+        <li>{t('adaptability')}: {gameData.adaptability}</li>
+        <li>{t('survivability')}: {gameData.survivability}</li>
+        <li>{t('reproductive')}: {gameData.reproduction}</li>
+        <li>{t('externalEnvironment')}: {gameData.env}</li>
+        <li>{t('survivalDay')}: {gameData.day}</li>
+        <li>{t('finalScore')} {totalScore}</li>
+        <li>{t('finalEvaluation')} {getFinalTitle(gameData)}</li>
       </ul>
       <br />
-      <p>是否上传DNA，融合进族群？</p>
+      <p>{t('isUploadDNA')}</p>
     </div>
   );
 }

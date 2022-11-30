@@ -3,13 +3,14 @@ import { useMemo } from 'react';
 import { useCallback, useEffect, useState } from 'react';
 import ReactDOM from 'react-dom';
 import Modal from 'react-modal';
+import { t } from '../../i18n';
 import { Button } from '../Button';
 
 import styles from './Dialog.less';
 import { DialogIcon } from './DialogIcon';
 
 // eslint-disable-next-line @typescript-eslint/no-empty-function
-function noop() {}
+function noop() { }
 
 export enum DialogType {
   SUCCESS,
@@ -40,7 +41,7 @@ export function Dialog(props: DialogProps) {
     className,
     children,
     onOk,
-    okText = '确定',
+    okText = t('ok'),
     onCancel,
     unMount = noop,
   } = props;
@@ -95,7 +96,7 @@ export function Dialog(props: DialogProps) {
             {okText}
           </Button>
         )}
-        {onCancel && <Button onClick={onDidCancel}>取消</Button>}
+        {onCancel && <Button onClick={onDidCancel}>{t('cancel')}</Button>}
       </div>
     </Modal>
   );
@@ -156,7 +157,7 @@ export function error(title: string, message: React.ReactChild | React.ReactChil
 }
 
 export function confirmDialog(
-  message: React.ReactChild | React.ReactChildren,
+  message: any,
   onOk = noop,
   onCancel = noop,
 ) {

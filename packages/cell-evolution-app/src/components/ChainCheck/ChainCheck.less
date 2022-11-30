@@ -13,13 +13,36 @@
   .warning {
     position: fixed;
     z-index: 9999;
-    width: 100%;
-    margin: 10px;
+    width: 50%;
+    margin: 0 auto;
+    left:0;
+    right:0;
+    margin-top: 10px;
     color: #ff9800;
     line-height: 50px;
     text-align: center;
     background-color: #ff98003d;
     border: 1px solid #ff9800;
+  }
+  .language{
+    position: fixed;
+    float:left;
+    display: flex;
+    align-items:center;
+    z-index: 9999;
+    margin: 15px;
+    color: #468296;
+    background-color: #1f3a4269;
+    border: 1px solid #468296;
+    cursor: pointer;
+    & > div{
+      width:80px;
+      padding: 10px;
+      text-align: center;
+    }
+    & > div:nth-child(1){
+       border-right: 1px solid #468296;
+    }
   }
   .info {
     position: fixed;
@@ -31,4 +54,8 @@
     background-color: #1f3a4269;
     border: 1px solid #468296;
   }
+}
+
+.selected{
+  background: black;
 }
