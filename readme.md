@@ -37,10 +37,11 @@ yarn
 yarn compile:contract
 ```
 
-# Set Env
+## Set Env
 
-copy `cell-evolution-contracts/envs/.env.eth.goerli` to `cell-evolution-contracts/.env`
-then set PRIVATE_KEY and infula api key
+change the file name from `cell-evolution-contracts/.env.example` to `cell-evolution-contracts/.env`
+
+then set PRIVATE_KEY and [INFURA](https://www.infura.io/)_KEY
 
 ## Deploy Contract
 
