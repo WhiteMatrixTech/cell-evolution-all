@@ -37,7 +37,9 @@ yarn
 
 ## 🔑 Set the Private Key of Deploy Account
 
-open file `packages/cell-evolution-contracts/.env` , set the Private Key
+change the file name from `cell-evolution-contracts/.env.example` to `cell-evolution-contracts/.env`
+
+then set PRIVATE_KEY 
 
 ```
 PRIVATE_KEY=XXX
