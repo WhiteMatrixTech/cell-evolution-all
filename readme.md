@@ -39,7 +39,7 @@ yarn compile:contract
 
 ## Set Env
 
-change the file name from `cell-evolution-contracts/.env.example` to `cell-evolution-contracts/.env`
+change the file name from `./packages/cell-evolution-contracts/.env.example` to `./packages/cell-evolution-contracts/.env`
 
 then set PRIVATE_KEY and [INFURA](https://www.infura.io/)_KEY
 
