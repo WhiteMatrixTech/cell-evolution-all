@@ -5,14 +5,17 @@
     "packages/*",
     "packages/cell-evolution-contracts/sdk"
   ],
+  "engines": {
+    "node": "16.15.0"
+  },
   "scripts": {
+    "build": "yarn && yarn run build:sdk && yarn workspace cell-evolution-app run build",
+    "build:sdk": "yarn workspace @white-matrix/cellevolution-sdk build",
     "compile:contract": "yarn workspace cell-evolution-contracts run compile",
-    "test:contract": "yarn workspace cell-evolution-contracts run test",
     "coverage:contract": "yarn workspace cell-evolution-contracts run coverage",
     "deploy:contract": "yarn workspace cell-evolution-contracts run deploy",
-    "build:sdk": "yarn workspace @white-matrix/cellevolution-sdk build",
     "start:webapp": "yarn workspace cell-evolution-app run start",
-    "verify:contract": "yarn workspace cell-evolution-contracts run verify",
-    "build":"yarn && yarn run build:sdk && yarn workspace cell-evolution-app run build"
+    "test:contract": "yarn workspace cell-evolution-contracts run test",
+    "verify:contract": "yarn workspace cell-evolution-contracts run verify"
   }
 }
