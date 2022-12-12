@@ -5,9 +5,6 @@
     "packages/*",
     "packages/cell-evolution-contracts/sdk"
   ],
-  "engines": {
-    "node": "16.15.0"
-  },
   "scripts": {
     "build": "yarn && yarn run build:sdk && yarn workspace cell-evolution-app run build",
     "build:sdk": "yarn workspace @white-matrix/cellevolution-sdk build",
