@@ -1,5 +1,5 @@
 export default {
-  local: 'en',
+  local: 'English',
   en: 'English',
   zh: '中文',
   ok: 'Confirm',
