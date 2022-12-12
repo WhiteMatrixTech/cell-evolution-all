@@ -43,8 +43,8 @@ export function Infos(props: InfosProps) {
   return (
     <div className={cn(styles.Infos, className)}>
       <div className={cn(styles.head, 'infos')}>
-        <a className={t('local') === 'en' ? styles.wordInfoEn : styles.wordInfo} onClick={worldInfoClick}></a>
-        <a className={t('local') === 'en' ? styles.cellInfoEn : styles.cellInfo} onClick={cellInfoClick}></a>
+        <a className={t('local') === 'English' ? styles.wordInfoEn : styles.wordInfo} onClick={worldInfoClick}></a>
+        <a className={t('local') === 'English' ? styles.cellInfoEn : styles.cellInfo} onClick={cellInfoClick}></a>
       </div>
       <div className={styles.content}>
         {t('whatIsCellEvolution')}
